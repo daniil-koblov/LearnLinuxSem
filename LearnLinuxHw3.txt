@@ -1,0 +1,1128 @@
+1 часть
+danil@danil-linux:~$ sudo useradd -s /bin/bash newuser
+danil@danil-linux:~$ cat /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:102:105::/nonexistent:/usr/sbin/nologin
+systemd-timesync:x:103:106:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+syslog:x:104:111::/home/syslog:/usr/sbin/nologin
+_apt:x:105:65534::/nonexistent:/usr/sbin/nologin
+tss:x:106:112:TPM software stack,,,:/var/lib/tpm:/bin/false
+uuidd:x:107:115::/run/uuidd:/usr/sbin/nologin
+systemd-oom:x:108:116:systemd Userspace OOM Killer,,,:/run/systemd:/usr/sbin/nologin
+tcpdump:x:109:117::/nonexistent:/usr/sbin/nologin
+avahi-autoipd:x:110:119:Avahi autoip daemon,,,:/var/lib/avahi-autoipd:/usr/sbin/nologin
+usbmux:x:111:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+dnsmasq:x:112:65534:dnsmasq,,,:/var/lib/misc:/usr/sbin/nologin
+kernoops:x:113:65534:Kernel Oops Tracking Daemon,,,:/:/usr/sbin/nologin
+avahi:x:114:121:Avahi mDNS daemon,,,:/run/avahi-daemon:/usr/sbin/nologin
+cups-pk-helper:x:115:122:user for cups-pk-helper service,,,:/home/cups-pk-helper:/usr/sbin/nologin
+rtkit:x:116:123:RealtimeKit,,,:/proc:/usr/sbin/nologin
+whoopsie:x:117:124::/nonexistent:/bin/false
+sssd:x:118:125:SSSD system user,,,:/var/lib/sss:/usr/sbin/nologin
+speech-dispatcher:x:119:29:Speech Dispatcher,,,:/run/speech-dispatcher:/bin/false
+fwupd-refresh:x:120:126:fwupd-refresh user,,,:/run/systemd:/usr/sbin/nologin
+nm-openvpn:x:121:127:NetworkManager OpenVPN,,,:/var/lib/openvpn/chroot:/usr/sbin/nologin
+saned:x:122:129::/var/lib/saned:/usr/sbin/nologin
+colord:x:123:130:colord colour management daemon,,,:/var/lib/colord:/usr/sbin/nologin
+geoclue:x:124:131::/var/lib/geoclue:/usr/sbin/nologin
+pulse:x:125:132:PulseAudio daemon,,,:/run/pulse:/usr/sbin/nologin
+gnome-initial-setup:x:126:65534::/run/gnome-initial-setup/:/bin/false
+hplip:x:127:7:HPLIP system user,,,:/run/hplip:/bin/false
+gdm:x:128:134:Gnome Display Manager:/var/lib/gdm3:/bin/false
+danil:x:1000:1000:Danil,,,:/home/danil:/bin/bash
+sshd:x:129:65534::/run/sshd:/usr/sbin/nologin
+vboxadd:x:999:1::/var/run/vboxadd:/bin/false
+newuser:x:1001:1001::/home/newuser:/bin/bash
+danil@danil-linux:~$ ls /home
+danil
+danil@danil-linux:~$ sudo userdel newuser -r
+userdel: почтовый ящик newuser (/var/mail/newuser) не найден
+userdel: домашний каталог пользователя newuser (/home/newuser) не найден
+danil@danil-linux:~$ cat /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:102:105::/nonexistent:/usr/sbin/nologin
+systemd-timesync:x:103:106:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+syslog:x:104:111::/home/syslog:/usr/sbin/nologin
+_apt:x:105:65534::/nonexistent:/usr/sbin/nologin
+tss:x:106:112:TPM software stack,,,:/var/lib/tpm:/bin/false
+uuidd:x:107:115::/run/uuidd:/usr/sbin/nologin
+systemd-oom:x:108:116:systemd Userspace OOM Killer,,,:/run/systemd:/usr/sbin/nologin
+tcpdump:x:109:117::/nonexistent:/usr/sbin/nologin
+avahi-autoipd:x:110:119:Avahi autoip daemon,,,:/var/lib/avahi-autoipd:/usr/sbin/nologin
+usbmux:x:111:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+dnsmasq:x:112:65534:dnsmasq,,,:/var/lib/misc:/usr/sbin/nologin
+kernoops:x:113:65534:Kernel Oops Tracking Daemon,,,:/:/usr/sbin/nologin
+avahi:x:114:121:Avahi mDNS daemon,,,:/run/avahi-daemon:/usr/sbin/nologin
+cups-pk-helper:x:115:122:user for cups-pk-helper service,,,:/home/cups-pk-helper:/usr/sbin/nologin
+rtkit:x:116:123:RealtimeKit,,,:/proc:/usr/sbin/nologin
+whoopsie:x:117:124::/nonexistent:/bin/false
+sssd:x:118:125:SSSD system user,,,:/var/lib/sss:/usr/sbin/nologin
+speech-dispatcher:x:119:29:Speech Dispatcher,,,:/run/speech-dispatcher:/bin/false
+fwupd-refresh:x:120:126:fwupd-refresh user,,,:/run/systemd:/usr/sbin/nologin
+nm-openvpn:x:121:127:NetworkManager OpenVPN,,,:/var/lib/openvpn/chroot:/usr/sbin/nologin
+saned:x:122:129::/var/lib/saned:/usr/sbin/nologin
+colord:x:123:130:colord colour management daemon,,,:/var/lib/colord:/usr/sbin/nologin
+geoclue:x:124:131::/var/lib/geoclue:/usr/sbin/nologin
+pulse:x:125:132:PulseAudio daemon,,,:/run/pulse:/usr/sbin/nologin
+gnome-initial-setup:x:126:65534::/run/gnome-initial-setup/:/bin/false
+hplip:x:127:7:HPLIP system user,,,:/run/hplip:/bin/false
+gdm:x:128:134:Gnome Display Manager:/var/lib/gdm3:/bin/false
+danil:x:1000:1000:Danil,,,:/home/danil:/bin/bash
+sshd:x:129:65534::/run/sshd:/usr/sbin/nologin
+vboxadd:x:999:1::/var/run/vboxadd:/bin/false
+danil@danil-linux:~$ sudo useradd -s /bin/bash -m -d /home/newuser2 newuser2
+danil@danil-linux:~$ ls /home
+danil  newuser2
+danil@danil-linux:~$ cat /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:102:105::/nonexistent:/usr/sbin/nologin
+systemd-timesync:x:103:106:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+syslog:x:104:111::/home/syslog:/usr/sbin/nologin
+_apt:x:105:65534::/nonexistent:/usr/sbin/nologin
+tss:x:106:112:TPM software stack,,,:/var/lib/tpm:/bin/false
+uuidd:x:107:115::/run/uuidd:/usr/sbin/nologin
+systemd-oom:x:108:116:systemd Userspace OOM Killer,,,:/run/systemd:/usr/sbin/nologin
+tcpdump:x:109:117::/nonexistent:/usr/sbin/nologin
+avahi-autoipd:x:110:119:Avahi autoip daemon,,,:/var/lib/avahi-autoipd:/usr/sbin/nologin
+usbmux:x:111:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+dnsmasq:x:112:65534:dnsmasq,,,:/var/lib/misc:/usr/sbin/nologin
+kernoops:x:113:65534:Kernel Oops Tracking Daemon,,,:/:/usr/sbin/nologin
+avahi:x:114:121:Avahi mDNS daemon,,,:/run/avahi-daemon:/usr/sbin/nologin
+cups-pk-helper:x:115:122:user for cups-pk-helper service,,,:/home/cups-pk-helper:/usr/sbin/nologin
+rtkit:x:116:123:RealtimeKit,,,:/proc:/usr/sbin/nologin
+whoopsie:x:117:124::/nonexistent:/bin/false
+sssd:x:118:125:SSSD system user,,,:/var/lib/sss:/usr/sbin/nologin
+speech-dispatcher:x:119:29:Speech Dispatcher,,,:/run/speech-dispatcher:/bin/false
+fwupd-refresh:x:120:126:fwupd-refresh user,,,:/run/systemd:/usr/sbin/nologin
+nm-openvpn:x:121:127:NetworkManager OpenVPN,,,:/var/lib/openvpn/chroot:/usr/sbin/nologin
+saned:x:122:129::/var/lib/saned:/usr/sbin/nologin
+colord:x:123:130:colord colour management daemon,,,:/var/lib/colord:/usr/sbin/nologin
+geoclue:x:124:131::/var/lib/geoclue:/usr/sbin/nologin
+pulse:x:125:132:PulseAudio daemon,,,:/run/pulse:/usr/sbin/nologin
+gnome-initial-setup:x:126:65534::/run/gnome-initial-setup/:/bin/false
+hplip:x:127:7:HPLIP system user,,,:/run/hplip:/bin/false
+gdm:x:128:134:Gnome Display Manager:/var/lib/gdm3:/bin/false
+danil:x:1000:1000:Danil,,,:/home/danil:/bin/bash
+sshd:x:129:65534::/run/sshd:/usr/sbin/nologin
+vboxadd:x:999:1::/var/run/vboxadd:/bin/false
+newuser2:x:1001:1001::/home/newuser2:/bin/bash
+danil@danil-linux:~$ ls /home
+danil  newuser2
+danil@danil-linux:~$ sudo userdel newuser2 -r
+userdel: почтовый ящик newuser2 (/var/mail/newuser2) не найден
+danil@danil-linux:~$
+
+2 часть
+danil@danil-linux:~$ cat /etc/group
+root:x:0:
+daemon:x:1:
+bin:x:2:
+sys:x:3:
+adm:x:4:syslog,danil
+tty:x:5:
+disk:x:6:
+lp:x:7:
+mail:x:8:
+news:x:9:
+uucp:x:10:
+man:x:12:
+proxy:x:13:
+kmem:x:15:
+dialout:x:20:
+fax:x:21:
+voice:x:22:
+cdrom:x:24:danil
+floppy:x:25:
+tape:x:26:
+sudo:x:27:danil
+audio:x:29:pulse
+dip:x:30:danil
+www-data:x:33:
+backup:x:34:
+operator:x:37:
+list:x:38:
+irc:x:39:
+src:x:40:
+gnats:x:41:
+shadow:x:42:
+utmp:x:43:
+video:x:44:
+sasl:x:45:
+plugdev:x:46:danil
+staff:x:50:
+games:x:60:
+users:x:100:
+nogroup:x:65534:
+systemd-journal:x:101:
+systemd-network:x:102:
+systemd-resolve:x:103:
+crontab:x:104:
+messagebus:x:105:
+systemd-timesync:x:106:
+input:x:107:
+sgx:x:108:
+kvm:x:109:
+render:x:110:
+syslog:x:111:
+tss:x:112:
+bluetooth:x:113:
+ssl-cert:x:114:
+uuidd:x:115:
+systemd-oom:x:116:
+tcpdump:x:117:
+_ssh:x:118:
+avahi-autoipd:x:119:
+netdev:x:120:
+avahi:x:121:
+lpadmin:x:122:danil
+rtkit:x:123:
+whoopsie:x:124:
+sssd:x:125:
+fwupd-refresh:x:126:
+nm-openvpn:x:127:
+scanner:x:128:saned
+saned:x:129:
+colord:x:130:
+geoclue:x:131:
+pulse:x:132:
+pulse-access:x:133:
+gdm:x:134:
+lxd:x:135:danil
+danil:x:1000:
+sambashare:x:136:danil
+vboxsf:x:999:danil
+vboxdrmipc:x:998:
+danil@danil-linux:~$ sudo useradd -s /bin/bash -m -d /home/testuser1 testuser1
+danil@danil-linux:~$ cat /etc/group
+root:x:0:
+daemon:x:1:
+bin:x:2:
+sys:x:3:
+adm:x:4:syslog,danil
+tty:x:5:
+disk:x:6:
+lp:x:7:
+mail:x:8:
+news:x:9:
+uucp:x:10:
+man:x:12:
+proxy:x:13:
+kmem:x:15:
+dialout:x:20:
+fax:x:21:
+voice:x:22:
+cdrom:x:24:danil
+floppy:x:25:
+tape:x:26:
+sudo:x:27:danil
+audio:x:29:pulse
+dip:x:30:danil
+www-data:x:33:
+backup:x:34:
+operator:x:37:
+list:x:38:
+irc:x:39:
+src:x:40:
+gnats:x:41:
+shadow:x:42:
+utmp:x:43:
+video:x:44:
+sasl:x:45:
+plugdev:x:46:danil
+staff:x:50:
+games:x:60:
+users:x:100:
+nogroup:x:65534:
+systemd-journal:x:101:
+systemd-network:x:102:
+systemd-resolve:x:103:
+crontab:x:104:
+messagebus:x:105:
+systemd-timesync:x:106:
+input:x:107:
+sgx:x:108:
+kvm:x:109:
+render:x:110:
+syslog:x:111:
+tss:x:112:
+bluetooth:x:113:
+ssl-cert:x:114:
+uuidd:x:115:
+systemd-oom:x:116:
+tcpdump:x:117:
+_ssh:x:118:
+avahi-autoipd:x:119:
+netdev:x:120:
+avahi:x:121:
+lpadmin:x:122:danil
+rtkit:x:123:
+whoopsie:x:124:
+sssd:x:125:
+fwupd-refresh:x:126:
+nm-openvpn:x:127:
+scanner:x:128:saned
+saned:x:129:
+colord:x:130:
+geoclue:x:131:
+pulse:x:132:
+pulse-access:x:133:
+gdm:x:134:
+lxd:x:135:danil
+danil:x:1000:
+sambashare:x:136:danil
+vboxsf:x:999:danil
+vboxdrmipc:x:998:
+testuser1:x:1001:
+danil@danil-linux:~$ cat /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:102:105::/nonexistent:/usr/sbin/nologin
+systemd-timesync:x:103:106:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+syslog:x:104:111::/home/syslog:/usr/sbin/nologin
+_apt:x:105:65534::/nonexistent:/usr/sbin/nologin
+tss:x:106:112:TPM software stack,,,:/var/lib/tpm:/bin/false
+uuidd:x:107:115::/run/uuidd:/usr/sbin/nologin
+systemd-oom:x:108:116:systemd Userspace OOM Killer,,,:/run/systemd:/usr/sbin/nologin
+tcpdump:x:109:117::/nonexistent:/usr/sbin/nologin
+avahi-autoipd:x:110:119:Avahi autoip daemon,,,:/var/lib/avahi-autoipd:/usr/sbin/nologin
+usbmux:x:111:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+dnsmasq:x:112:65534:dnsmasq,,,:/var/lib/misc:/usr/sbin/nologin
+kernoops:x:113:65534:Kernel Oops Tracking Daemon,,,:/:/usr/sbin/nologin
+avahi:x:114:121:Avahi mDNS daemon,,,:/run/avahi-daemon:/usr/sbin/nologin
+cups-pk-helper:x:115:122:user for cups-pk-helper service,,,:/home/cups-pk-helper:/usr/sbin/nologin
+rtkit:x:116:123:RealtimeKit,,,:/proc:/usr/sbin/nologin
+whoopsie:x:117:124::/nonexistent:/bin/false
+sssd:x:118:125:SSSD system user,,,:/var/lib/sss:/usr/sbin/nologin
+speech-dispatcher:x:119:29:Speech Dispatcher,,,:/run/speech-dispatcher:/bin/false
+fwupd-refresh:x:120:126:fwupd-refresh user,,,:/run/systemd:/usr/sbin/nologin
+nm-openvpn:x:121:127:NetworkManager OpenVPN,,,:/var/lib/openvpn/chroot:/usr/sbin/nologin
+saned:x:122:129::/var/lib/saned:/usr/sbin/nologin
+colord:x:123:130:colord colour management daemon,,,:/var/lib/colord:/usr/sbin/nologin
+geoclue:x:124:131::/var/lib/geoclue:/usr/sbin/nologin
+pulse:x:125:132:PulseAudio daemon,,,:/run/pulse:/usr/sbin/nologin
+gnome-initial-setup:x:126:65534::/run/gnome-initial-setup/:/bin/false
+hplip:x:127:7:HPLIP system user,,,:/run/hplip:/bin/false
+gdm:x:128:134:Gnome Display Manager:/var/lib/gdm3:/bin/false
+danil:x:1000:1000:Danil,,,:/home/danil:/bin/bash
+sshd:x:129:65534::/run/sshd:/usr/sbin/nologin
+vboxadd:x:999:1::/var/run/vboxadd:/bin/false
+testuser1:x:1001:1001::/home/testuser1:/bin/bash
+danil@danil-linux:~$ sudo id testuser1
+uid=1001(testuser1) gid=1001(testuser1) группы=1001(testuser1)
+danil@danil-linux:~$ sudo groupadd testusers
+danil@danil-linux:~$ cat /etc/group
+root:x:0:
+daemon:x:1:
+bin:x:2:
+sys:x:3:
+adm:x:4:syslog,danil
+tty:x:5:
+disk:x:6:
+lp:x:7:
+mail:x:8:
+news:x:9:
+uucp:x:10:
+man:x:12:
+proxy:x:13:
+kmem:x:15:
+dialout:x:20:
+fax:x:21:
+voice:x:22:
+cdrom:x:24:danil
+floppy:x:25:
+tape:x:26:
+sudo:x:27:danil
+audio:x:29:pulse
+dip:x:30:danil
+www-data:x:33:
+backup:x:34:
+operator:x:37:
+list:x:38:
+irc:x:39:
+src:x:40:
+gnats:x:41:
+shadow:x:42:
+utmp:x:43:
+video:x:44:
+sasl:x:45:
+plugdev:x:46:danil
+staff:x:50:
+games:x:60:
+users:x:100:
+nogroup:x:65534:
+systemd-journal:x:101:
+systemd-network:x:102:
+systemd-resolve:x:103:
+crontab:x:104:
+messagebus:x:105:
+systemd-timesync:x:106:
+input:x:107:
+sgx:x:108:
+kvm:x:109:
+render:x:110:
+syslog:x:111:
+tss:x:112:
+bluetooth:x:113:
+ssl-cert:x:114:
+uuidd:x:115:
+systemd-oom:x:116:
+tcpdump:x:117:
+_ssh:x:118:
+avahi-autoipd:x:119:
+netdev:x:120:
+avahi:x:121:
+lpadmin:x:122:danil
+rtkit:x:123:
+whoopsie:x:124:
+sssd:x:125:
+fwupd-refresh:x:126:
+nm-openvpn:x:127:
+scanner:x:128:saned
+saned:x:129:
+colord:x:130:
+geoclue:x:131:
+pulse:x:132:
+pulse-access:x:133:
+gdm:x:134:
+lxd:x:135:danil
+danil:x:1000:
+sambashare:x:136:danil
+vboxsf:x:999:danil
+vboxdrmipc:x:998:
+testuser1:x:1001:
+testusers:x:1002:
+danil@danil-linux:~$ sudo usermod -aG testusers testuser1
+danil@danil-linux:~$ cat /etc/group
+root:x:0:
+daemon:x:1:
+bin:x:2:
+sys:x:3:
+adm:x:4:syslog,danil
+tty:x:5:
+disk:x:6:
+lp:x:7:
+mail:x:8:
+news:x:9:
+uucp:x:10:
+man:x:12:
+proxy:x:13:
+kmem:x:15:
+dialout:x:20:
+fax:x:21:
+voice:x:22:
+cdrom:x:24:danil
+floppy:x:25:
+tape:x:26:
+sudo:x:27:danil
+audio:x:29:pulse
+dip:x:30:danil
+www-data:x:33:
+backup:x:34:
+operator:x:37:
+list:x:38:
+irc:x:39:
+src:x:40:
+gnats:x:41:
+shadow:x:42:
+utmp:x:43:
+video:x:44:
+sasl:x:45:
+plugdev:x:46:danil
+staff:x:50:
+games:x:60:
+users:x:100:
+nogroup:x:65534:
+systemd-journal:x:101:
+systemd-network:x:102:
+systemd-resolve:x:103:
+crontab:x:104:
+messagebus:x:105:
+systemd-timesync:x:106:
+input:x:107:
+sgx:x:108:
+kvm:x:109:
+render:x:110:
+syslog:x:111:
+tss:x:112:
+bluetooth:x:113:
+ssl-cert:x:114:
+uuidd:x:115:
+systemd-oom:x:116:
+tcpdump:x:117:
+_ssh:x:118:
+avahi-autoipd:x:119:
+netdev:x:120:
+avahi:x:121:
+lpadmin:x:122:danil
+rtkit:x:123:
+whoopsie:x:124:
+sssd:x:125:
+fwupd-refresh:x:126:
+nm-openvpn:x:127:
+scanner:x:128:saned
+saned:x:129:
+colord:x:130:
+geoclue:x:131:
+pulse:x:132:
+pulse-access:x:133:
+gdm:x:134:
+lxd:x:135:danil
+danil:x:1000:
+sambashare:x:136:danil
+vboxsf:x:999:danil
+vboxdrmipc:x:998:
+testuser1:x:1001:
+testusers:x:1002:testuser1
+danil@danil-linux:~$ sudo useradd -s /bin/bash -m -d /home/testuser2 testuser2
+danil@danil-linux:~$ cat /etc/group
+root:x:0:
+daemon:x:1:
+bin:x:2:
+sys:x:3:
+adm:x:4:syslog,danil
+tty:x:5:
+disk:x:6:
+lp:x:7:
+mail:x:8:
+news:x:9:
+uucp:x:10:
+man:x:12:
+proxy:x:13:
+kmem:x:15:
+dialout:x:20:
+fax:x:21:
+voice:x:22:
+cdrom:x:24:danil
+floppy:x:25:
+tape:x:26:
+sudo:x:27:danil
+audio:x:29:pulse
+dip:x:30:danil
+www-data:x:33:
+backup:x:34:
+operator:x:37:
+list:x:38:
+irc:x:39:
+src:x:40:
+gnats:x:41:
+shadow:x:42:
+utmp:x:43:
+video:x:44:
+sasl:x:45:
+plugdev:x:46:danil
+staff:x:50:
+games:x:60:
+users:x:100:
+nogroup:x:65534:
+systemd-journal:x:101:
+systemd-network:x:102:
+systemd-resolve:x:103:
+crontab:x:104:
+messagebus:x:105:
+systemd-timesync:x:106:
+input:x:107:
+sgx:x:108:
+kvm:x:109:
+render:x:110:
+syslog:x:111:
+tss:x:112:
+bluetooth:x:113:
+ssl-cert:x:114:
+uuidd:x:115:
+systemd-oom:x:116:
+tcpdump:x:117:
+_ssh:x:118:
+avahi-autoipd:x:119:
+netdev:x:120:
+avahi:x:121:
+lpadmin:x:122:danil
+rtkit:x:123:
+whoopsie:x:124:
+sssd:x:125:
+fwupd-refresh:x:126:
+nm-openvpn:x:127:
+scanner:x:128:saned
+saned:x:129:
+colord:x:130:
+geoclue:x:131:
+pulse:x:132:
+pulse-access:x:133:
+gdm:x:134:
+lxd:x:135:danil
+danil:x:1000:
+sambashare:x:136:danil
+vboxsf:x:999:danil
+vboxdrmipc:x:998:
+testuser1:x:1001:
+testusers:x:1002:testuser1
+testuser2:x:1003:
+danil@danil-linux:~$ sudo usermod -aG testusers testuser1
+danil@danil-linux:~$ cat /etc/group
+root:x:0:
+daemon:x:1:
+bin:x:2:
+sys:x:3:
+adm:x:4:syslog,danil
+tty:x:5:
+disk:x:6:
+lp:x:7:
+mail:x:8:
+news:x:9:
+uucp:x:10:
+man:x:12:
+proxy:x:13:
+kmem:x:15:
+dialout:x:20:
+fax:x:21:
+voice:x:22:
+cdrom:x:24:danil
+floppy:x:25:
+tape:x:26:
+sudo:x:27:danil
+audio:x:29:pulse
+dip:x:30:danil
+www-data:x:33:
+backup:x:34:
+operator:x:37:
+list:x:38:
+irc:x:39:
+src:x:40:
+gnats:x:41:
+shadow:x:42:
+utmp:x:43:
+video:x:44:
+sasl:x:45:
+plugdev:x:46:danil
+staff:x:50:
+games:x:60:
+users:x:100:
+nogroup:x:65534:
+systemd-journal:x:101:
+systemd-network:x:102:
+systemd-resolve:x:103:
+crontab:x:104:
+messagebus:x:105:
+systemd-timesync:x:106:
+input:x:107:
+sgx:x:108:
+kvm:x:109:
+render:x:110:
+syslog:x:111:
+tss:x:112:
+bluetooth:x:113:
+ssl-cert:x:114:
+uuidd:x:115:
+systemd-oom:x:116:
+tcpdump:x:117:
+_ssh:x:118:
+avahi-autoipd:x:119:
+netdev:x:120:
+avahi:x:121:
+lpadmin:x:122:danil
+rtkit:x:123:
+whoopsie:x:124:
+sssd:x:125:
+fwupd-refresh:x:126:
+nm-openvpn:x:127:
+scanner:x:128:saned
+saned:x:129:
+colord:x:130:
+geoclue:x:131:
+pulse:x:132:
+pulse-access:x:133:
+gdm:x:134:
+lxd:x:135:danil
+danil:x:1000:
+sambashare:x:136:danil
+vboxsf:x:999:danil
+vboxdrmipc:x:998:
+testuser1:x:1001:
+testusers:x:1002:testuser1
+testuser2:x:1003:
+danil@danil-linux:~$ sudo usermod -aG testusers testuser2
+danil@danil-linux:~$ cat /etc/group
+root:x:0:
+daemon:x:1:
+bin:x:2:
+sys:x:3:
+adm:x:4:syslog,danil
+tty:x:5:
+disk:x:6:
+lp:x:7:
+mail:x:8:
+news:x:9:
+uucp:x:10:
+man:x:12:
+proxy:x:13:
+kmem:x:15:
+dialout:x:20:
+fax:x:21:
+voice:x:22:
+cdrom:x:24:danil
+floppy:x:25:
+tape:x:26:
+sudo:x:27:danil
+audio:x:29:pulse
+dip:x:30:danil
+www-data:x:33:
+backup:x:34:
+operator:x:37:
+list:x:38:
+irc:x:39:
+src:x:40:
+gnats:x:41:
+shadow:x:42:
+utmp:x:43:
+video:x:44:
+sasl:x:45:
+plugdev:x:46:danil
+staff:x:50:
+games:x:60:
+users:x:100:
+nogroup:x:65534:
+systemd-journal:x:101:
+systemd-network:x:102:
+systemd-resolve:x:103:
+crontab:x:104:
+messagebus:x:105:
+systemd-timesync:x:106:
+input:x:107:
+sgx:x:108:
+kvm:x:109:
+render:x:110:
+syslog:x:111:
+tss:x:112:
+bluetooth:x:113:
+ssl-cert:x:114:
+uuidd:x:115:
+systemd-oom:x:116:
+tcpdump:x:117:
+_ssh:x:118:
+avahi-autoipd:x:119:
+netdev:x:120:
+avahi:x:121:
+lpadmin:x:122:danil
+rtkit:x:123:
+whoopsie:x:124:
+sssd:x:125:
+fwupd-refresh:x:126:
+nm-openvpn:x:127:
+scanner:x:128:saned
+saned:x:129:
+colord:x:130:
+geoclue:x:131:
+pulse:x:132:
+pulse-access:x:133:
+gdm:x:134:
+lxd:x:135:danil
+danil:x:1000:
+sambashare:x:136:danil
+vboxsf:x:999:danil
+vboxdrmipc:x:998:
+testuser1:x:1001:
+testusers:x:1002:testuser1,testuser2
+testuser2:x:1003:
+danil@danil-linux:~$ sudo id testuser1
+uid=1001(testuser1) gid=1001(testuser1) группы=1001(testuser1),1002(testusers)
+danil@danil-linux:~$ sudo id testuser2
+uid=1002(testuser2) gid=1003(testuser2) группы=1003(testuser2),1002(testusers)
+danil@danil-linux:~$ sudo usermod -g testusers testuser1
+danil@danil-linux:~$ sudo id testuser1
+uid=1001(testuser1) gid=1002(testusers) группы=1002(testusers)
+danil@danil-linux:~$ sudo id testuser2
+uid=1002(testuser2) gid=1003(testuser2) группы=1003(testuser2),1002(testusers)
+danil@danil-linux:~$ cat /etc/group
+root:x:0:
+daemon:x:1:
+bin:x:2:
+sys:x:3:
+adm:x:4:syslog,danil
+tty:x:5:
+disk:x:6:
+lp:x:7:
+mail:x:8:
+news:x:9:
+uucp:x:10:
+man:x:12:
+proxy:x:13:
+kmem:x:15:
+dialout:x:20:
+fax:x:21:
+voice:x:22:
+cdrom:x:24:danil
+floppy:x:25:
+tape:x:26:
+sudo:x:27:danil
+audio:x:29:pulse
+dip:x:30:danil
+www-data:x:33:
+backup:x:34:
+operator:x:37:
+list:x:38:
+irc:x:39:
+src:x:40:
+gnats:x:41:
+shadow:x:42:
+utmp:x:43:
+video:x:44:
+sasl:x:45:
+plugdev:x:46:danil
+staff:x:50:
+games:x:60:
+users:x:100:
+nogroup:x:65534:
+systemd-journal:x:101:
+systemd-network:x:102:
+systemd-resolve:x:103:
+crontab:x:104:
+messagebus:x:105:
+systemd-timesync:x:106:
+input:x:107:
+sgx:x:108:
+kvm:x:109:
+render:x:110:
+syslog:x:111:
+tss:x:112:
+bluetooth:x:113:
+ssl-cert:x:114:
+uuidd:x:115:
+systemd-oom:x:116:
+tcpdump:x:117:
+_ssh:x:118:
+avahi-autoipd:x:119:
+netdev:x:120:
+avahi:x:121:
+lpadmin:x:122:danil
+rtkit:x:123:
+whoopsie:x:124:
+sssd:x:125:
+fwupd-refresh:x:126:
+nm-openvpn:x:127:
+scanner:x:128:saned
+saned:x:129:
+colord:x:130:
+geoclue:x:131:
+pulse:x:132:
+pulse-access:x:133:
+gdm:x:134:
+lxd:x:135:danil
+danil:x:1000:
+sambashare:x:136:danil
+vboxsf:x:999:danil
+vboxdrmipc:x:998:
+testuser1:x:1001:
+testusers:x:1002:testuser1,testuser2
+testuser2:x:1003:
+danil@danil-linux:~$ sudo id testuser2
+uid=1002(testuser2) gid=1003(testuser2) группы=1003(testuser2),1002(testusers)
+danil@danil-linux:~$ ыгвщ вфsudo deluser testuser2 testusers
+Удаляется пользователь «testuser2» из группы «testusers» ...
+Готово.
+danil@danil-linux:~$ sudo id testuser2
+uid=1002(testuser2) gid=1003(testuser2) группы=1003(testuser2)
+danil@danil-linux:~$
+
+3 часть
+danil@danil-linux:/home$ sudo adduser superuser1
+Добавляется пользователь «superuser1» ...
+Добавляется новая группа «superuser1» (1004) ...
+Добавляется новый пользователь «superuser1» (1003) в группу «superuser1» ...
+Создаётся домашний каталог «/home/superuser1» ...
+Копирование файлов из «/etc/skel» ...
+Новый пароль:
+Повторите ввод нового пароля:
+passwd: пароль успешно обновлён
+Изменение информации о пользователе superuser1
+Введите новое значение или нажмите ENTER для выбора значения по умолчанию
+        Полное имя []:
+        Номер комнаты []:
+        Рабочий телефон []:
+        Домашний телефон []:
+        Другое []:
+Данная информация корректна? [Y/n] y
+danil@danil-linux:/home$ cat /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:102:105::/nonexistent:/usr/sbin/nologin
+systemd-timesync:x:103:106:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+syslog:x:104:111::/home/syslog:/usr/sbin/nologin
+_apt:x:105:65534::/nonexistent:/usr/sbin/nologin
+tss:x:106:112:TPM software stack,,,:/var/lib/tpm:/bin/false
+uuidd:x:107:115::/run/uuidd:/usr/sbin/nologin
+systemd-oom:x:108:116:systemd Userspace OOM Killer,,,:/run/systemd:/usr/sbin/nologin
+tcpdump:x:109:117::/nonexistent:/usr/sbin/nologin
+avahi-autoipd:x:110:119:Avahi autoip daemon,,,:/var/lib/avahi-autoipd:/usr/sbin/nologin
+usbmux:x:111:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+dnsmasq:x:112:65534:dnsmasq,,,:/var/lib/misc:/usr/sbin/nologin
+kernoops:x:113:65534:Kernel Oops Tracking Daemon,,,:/:/usr/sbin/nologin
+avahi:x:114:121:Avahi mDNS daemon,,,:/run/avahi-daemon:/usr/sbin/nologin
+cups-pk-helper:x:115:122:user for cups-pk-helper service,,,:/home/cups-pk-helper:/usr/sbin/nologin
+rtkit:x:116:123:RealtimeKit,,,:/proc:/usr/sbin/nologin
+whoopsie:x:117:124::/nonexistent:/bin/false
+sssd:x:118:125:SSSD system user,,,:/var/lib/sss:/usr/sbin/nologin
+speech-dispatcher:x:119:29:Speech Dispatcher,,,:/run/speech-dispatcher:/bin/false
+fwupd-refresh:x:120:126:fwupd-refresh user,,,:/run/systemd:/usr/sbin/nologin
+nm-openvpn:x:121:127:NetworkManager OpenVPN,,,:/var/lib/openvpn/chroot:/usr/sbin/nologin
+saned:x:122:129::/var/lib/saned:/usr/sbin/nologin
+colord:x:123:130:colord colour management daemon,,,:/var/lib/colord:/usr/sbin/nologin
+geoclue:x:124:131::/var/lib/geoclue:/usr/sbin/nologin
+pulse:x:125:132:PulseAudio daemon,,,:/run/pulse:/usr/sbin/nologin
+gnome-initial-setup:x:126:65534::/run/gnome-initial-setup/:/bin/false
+hplip:x:127:7:HPLIP system user,,,:/run/hplip:/bin/false
+gdm:x:128:134:Gnome Display Manager:/var/lib/gdm3:/bin/false
+danil:x:1000:1000:Danil,,,:/home/danil:/bin/bash
+sshd:x:129:65534::/run/sshd:/usr/sbin/nologin
+vboxadd:x:999:1::/var/run/vboxadd:/bin/false
+testuser1:x:1001:1002::/home/testuser1:/bin/bash
+testuser2:x:1002:1003::/home/testuser2:/bin/bash
+superuser1:x:1003:1004:,,,:/home/superuser1:/bin/bash
+danil@danil-linux:/home$ ll
+итого 24
+drwxr-xr-x  6 root       root       4096 июн 28 14:25 ./
+drwxr-xr-x 20 root       root       4096 июн 19 18:37 ../
+drwxr-x--- 15 danil      danil      4096 июн 28 13:09 danil/
+drwxr-x---  2 superuser1 superuser1 4096 июн 28 14:25 superuser1/
+drwxr-x---  2 testuser1  testusers  4096 июн 28 13:49 testuser1/
+drwxr-x---  2 testuser2  testuser2  4096 июн 28 13:58 testuser2/
+danil@danil-linux:/home$ sudo usermod -aG sudo superuser1
+danil@danil-linux:/home$ sudo id superuser1
+uid=1003(superuser1) gid=1004(superuser1) группы=1004(superuser1),27(sudo)
+danil@danil-linux:/home$ su superuser1
+Пароль:
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+superuser1@danil-linux:/home$ cd ../
+superuser1@danil-linux:/$ cat /etc/group
+root:x:0:
+daemon:x:1:
+bin:x:2:
+sys:x:3:
+adm:x:4:syslog,danil
+tty:x:5:
+disk:x:6:
+lp:x:7:
+mail:x:8:
+news:x:9:
+uucp:x:10:
+man:x:12:
+proxy:x:13:
+kmem:x:15:
+dialout:x:20:
+fax:x:21:
+voice:x:22:
+cdrom:x:24:danil
+floppy:x:25:
+tape:x:26:
+sudo:x:27:danil,superuser1
+audio:x:29:pulse
+dip:x:30:danil
+www-data:x:33:
+backup:x:34:
+operator:x:37:
+list:x:38:
+irc:x:39:
+src:x:40:
+gnats:x:41:
+shadow:x:42:
+utmp:x:43:
+video:x:44:
+sasl:x:45:
+plugdev:x:46:danil
+staff:x:50:
+games:x:60:
+users:x:100:
+nogroup:x:65534:
+systemd-journal:x:101:
+systemd-network:x:102:
+systemd-resolve:x:103:
+crontab:x:104:
+messagebus:x:105:
+systemd-timesync:x:106:
+input:x:107:
+sgx:x:108:
+kvm:x:109:
+render:x:110:
+syslog:x:111:
+tss:x:112:
+bluetooth:x:113:
+ssl-cert:x:114:
+uuidd:x:115:
+systemd-oom:x:116:
+tcpdump:x:117:
+_ssh:x:118:
+avahi-autoipd:x:119:
+netdev:x:120:
+avahi:x:121:
+lpadmin:x:122:danil
+rtkit:x:123:
+whoopsie:x:124:
+sssd:x:125:
+fwupd-refresh:x:126:
+nm-openvpn:x:127:
+scanner:x:128:saned
+saned:x:129:
+colord:x:130:
+geoclue:x:131:
+pulse:x:132:
+pulse-access:x:133:
+gdm:x:134:
+lxd:x:135:danil
+danil:x:1000:
+sambashare:x:136:danil
+vboxsf:x:999:danil
+vboxdrmipc:x:998:
+testuser1:x:1001:
+testusers:x:1002:testuser1
+testuser2:x:1003:
+superuser1:x:1004:
+superuser1@danil-linux:/$ sudo /etc/shadow
+[sudo] пароль для superuser1:
+sudo: /etc/shadow: команда не найдена
+superuser1@danil-linux:/$ sudo cat /etc/shadow
+root:!:19527:0:99999:7:::
+daemon:*:19411:0:99999:7:::
+bin:*:19411:0:99999:7:::
+sys:*:19411:0:99999:7:::
+sync:*:19411:0:99999:7:::
+games:*:19411:0:99999:7:::
+man:*:19411:0:99999:7:::
+lp:*:19411:0:99999:7:::
+mail:*:19411:0:99999:7:::
+news:*:19411:0:99999:7:::
+uucp:*:19411:0:99999:7:::
+proxy:*:19411:0:99999:7:::
+www-data:*:19411:0:99999:7:::
+backup:*:19411:0:99999:7:::
+list:*:19411:0:99999:7:::
+irc:*:19411:0:99999:7:::
+gnats:*:19411:0:99999:7:::
+nobody:*:19411:0:99999:7:::
+systemd-network:*:19411:0:99999:7:::
+systemd-resolve:*:19411:0:99999:7:::
+messagebus:*:19411:0:99999:7:::
+systemd-timesync:*:19411:0:99999:7:::
+syslog:*:19411:0:99999:7:::
+_apt:*:19411:0:99999:7:::
+tss:*:19411:0:99999:7:::
+uuidd:*:19411:0:99999:7:::
+systemd-oom:*:19411:0:99999:7:::
+tcpdump:*:19411:0:99999:7:::
+avahi-autoipd:*:19411:0:99999:7:::
+usbmux:*:19411:0:99999:7:::
+dnsmasq:*:19411:0:99999:7:::
+kernoops:*:19411:0:99999:7:::
+avahi:*:19411:0:99999:7:::
+cups-pk-helper:*:19411:0:99999:7:::
+rtkit:*:19411:0:99999:7:::
+whoopsie:*:19411:0:99999:7:::
+sssd:*:19411:0:99999:7:::
+speech-dispatcher:!:19411:0:99999:7:::
+fwupd-refresh:*:19411:0:99999:7:::
+nm-openvpn:*:19411:0:99999:7:::
+saned:*:19411:0:99999:7:::
+colord:*:19411:0:99999:7:::
+geoclue:*:19411:0:99999:7:::
+pulse:*:19411:0:99999:7:::
+gnome-initial-setup:*:19411:0:99999:7:::
+hplip:*:19411:0:99999:7:::
+gdm:*:19411:0:99999:7:::
+danil:$y$j9T$Z1M41BHMg7KOk3/LRSmP6.$nYW/W81g95I/RHVtL8.RFXsqm8Nbx5QZecXknWQAFM.:19527:0:99999:7:::
+sshd:*:19527:0:99999:7:::
+vboxadd:!:19527::::::
+testuser1:!:19536:0:99999:7:::
+testuser2:!:19536:0:99999:7:::
+superuser1:$y$j9T$WqRPFgy7y8o6MS5ckM3df0$BbYdZLfCSPPwp1fe./7jq8XQcXprFL0vmKcDtKVkzmA:19536:0:99999:7:::
+superuser1@danil-linux:/$

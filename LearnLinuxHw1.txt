@@ -1,0 +1,180 @@
+danil@danil-linux:~$ sudo apt update
+
+Сущ:1 http://ru.archive.ubuntu.com/ubuntu jammy InRelease
+
+Сущ:2 http://ru.archive.ubuntu.com/ubuntu jammy-updates InRelease
+
+Сущ:3 http://ru.archive.ubuntu.com/ubuntu jammy-backports InRelease               
+
+Сущ:4 http://security.ubuntu.com/ubuntu jammy-security InRelease                  
+
+Чтение списков пакетов… Готово                                                    
+
+Построение дерева зависимостей… Готово
+
+Чтение информации о состоянии… Готово         
+
+Может быть обновлено 198 пакетов. Запустите «apt list --upgradable» для их показа.
+
+danil@danil-linux:~$ sudo apt install openssh-server -y
+
+Чтение списков пакетов… Готово
+
+Построение дерева зависимостей… Готово
+
+Чтение информации о состоянии… Готово         
+
+Уже установлен пакет openssh-server самой новой версии (1:8.9p1-3ubuntu0.1).
+
+Обновлено 0 пакетов, установлено 0 новых пакетов, для удаления отмечено 0 пакетов, и 198 пакетов не обновлено.
+
+danil@danil-linux:~$ sudo systemctl start ssh
+
+danil@danil-linux:~$ sudo systemctl status ssh
+
+● ssh.service - OpenBSD Secure Shell server
+
+     Loaded: loaded (/lib/systemd/system/ssh.service; enabled; vendor preset: enabled)
+
+     Active: active (running) since Tue 2023-06-20 21:03:43 MSK; 12min ago
+
+       Docs: man:sshd(8)
+
+             man:sshd_config(5)
+
+   Main PID: 717 (sshd)
+
+      Tasks: 1 (limit: 2264)
+
+     Memory: 3.1M
+
+        CPU: 77ms
+
+     CGroup: /system.slice/ssh.service
+
+             └─717 "sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups"
+
+
+
+июн 20 21:03:42 danil-linux systemd[1]: Starting OpenBSD Secure Shell server...
+
+июн 20 21:03:43 danil-linux sshd[717]: Server listening on 0.0.0.0 port 22.
+
+июн 20 21:03:43 danil-linux sshd[717]: Server listening on :: port 22.
+
+июн 20 21:03:43 danil-linux systemd[1]: Started OpenBSD Secure Shell server.
+
+danil@danil-linux:~$ sudo systemctl enable ssh
+
+Synchronizing state of ssh.service with SysV service script with /lib/systemd/systemd-sysv-install.
+
+Executing: /lib/systemd/systemd-sysv-install enable ssh
+
+danil@danil-linux:~$ ip addr
+
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+
+    inet 127.0.0.1/8 scope host lo
+
+       valid_lft forever preferred_lft forever
+
+    inet6 ::1/128 scope host 
+
+       valid_lft forever preferred_lft forever
+
+2: enp0s3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+
+    link/ether 08:00:27:6c:9b:43 brd ff:ff:ff:ff:ff:ff
+
+    inet 10.0.2.15/24 brd 10.0.2.255 scope global dynamic noprefixroute enp0s3
+
+       valid_lft 85566sec preferred_lft 85566sec
+
+    inet6 fe80::7b1b:85c4:5a4e:45ba/64 scope link noprefixroute 
+
+       valid_lft forever preferred_lft forever
+
+danil@danil-linux:~$ ip a
+
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+
+    inet 127.0.0.1/8 scope host lo
+
+       valid_lft forever preferred_lft forever
+
+    inet6 ::1/128 scope host 
+
+       valid_lft forever preferred_lft forever
+
+2: enp0s3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+
+    link/ether 08:00:27:6c:9b:43 brd ff:ff:ff:ff:ff:ff
+
+    inet 10.0.2.15/24 brd 10.0.2.255 scope global dynamic noprefixroute enp0s3
+
+       valid_lft 85550sec preferred_lft 85550sec
+
+    inet6 fe80::7b1b:85c4:5a4e:45ba/64 scope link noprefixroute 
+
+       valid_lft forever preferred_lft forever
+
+danil@danil-linux:~$ hostname i_
+
+hostname: the specified hostname is invalid
+
+danil@danil-linux:~$ hostname -I
+
+10.0.2.15 
+
+danil@danil-linux:~$ hostname -i
+
+10.0.2.15 fe80::7b1b:85c4:5a4e:45ba
+
+danil@danil-linux:~$ whoami
+
+danil
+
+danil@danil-linux:~$ sudo apt install mc
+
+Чтение списков пакетов… Готово
+
+Построение дерева зависимостей… Готово
+
+Чтение информации о состоянии… Готово         
+
+Уже установлен пакет mc самой новой версии (3:4.8.27-1).
+
+Обновлено 0 пакетов, установлено 0 новых пакетов, для удаления отмечено 0 пакетов, и 198 пакетов не обновлено.
+
+danil@danil-linux:~$ mc
+C:\Users\User>ssh -p 8022 danil@localhost
+danil@localhost's password:
+Welcome to Ubuntu 22.04.2 LTS (GNU/Linux 5.19.0-45-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+ * Introducing Expanded Security Maintenance for Applications.
+   Receive updates to over 25,000 software packages with your
+   Ubuntu Pro subscription. Free for personal use.
+
+     https://ubuntu.com/pro
+
+Расширенное поддержание безопасности (ESM) для Applications выключено.
+
+198 обновлений может быть применено немедленно.
+103 из этих обновлений, являются стандартными обновлениями безопасности.
+Чтобы просмотреть дополнительные обновления выполните: apt list --upgradable
+
+Включите ESM Apps для получения дополнительных будущих обновлений безопасности.
+Смотрите https://ubuntu.com/esm или выполните: sudo pro status
+
+Last login: Mon Jun 19 22:36:23 2023 from 10.0.2.2
+danil@danil-linux:~$ mc
+
+danil@danil-linux:~$ danil@danil-linux:~$

@@ -1,0 +1,1355 @@
+danil@danil-linux:~$ ll
+
+итого 176
+
+drwxr-x--- 15 danil danil   4096 июн 24 15:12  ./
+
+drwxr-xr-x  3 root  root    4096 июн 19 18:37  ../
+
+-rw-------  1 danil danil   1352 июн 24 15:16  .bash_history
+
+-rw-r--r--  1 danil danil    220 июн 19 18:37  .bash_logout
+
+-rw-r--r--  1 danil danil   3771 июн 19 18:37  .bashrc
+
+drwx------ 14 danil danil   4096 июн 22 10:38  .cache/
+
+drwx------ 14 danil danil   4096 июн 19 20:21  .config/
+
+-rw-------  1 danil danil     20 июн 19 19:39  .lesshst
+
+drwx------  3 danil danil   4096 июн 19 18:43  .local/
+
+-rw-r--r--  1 danil danil    807 июн 19 18:37  .profile
+
+drwxrwx---  1 root  vboxsf 65536 июн 22 10:59  shared/
+
+drwx------  4 danil danil   4096 июн 19 19:18  snap/
+
+-rw-r--r--  1 danil danil      0 июн 19 19:10  .sudo_as_admin_successful
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-clipboard-tty2-control.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-clipboard-tty2-service.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-draganddrop-tty2-control.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-draganddrop-tty2-service.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-hostversion-tty2-control.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-seamless-tty2-control.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-seamless-tty2-service.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-vmsvga-session-tty2-control.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-vmsvga-session-tty2-service.pid
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43  Видео/
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43  Документы/
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43  Загрузки/
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43  Изображения/
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43  Музыка/
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43  Общедоступные/
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43 'Рабочий стол'/
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43  Шаблоны/
+
+danil@danil-linux:~$ cd home
+
+bash: cd: home: Нет такого файла или каталога
+
+danil@danil-linux:~$ cd home/
+
+bash: cd: home/: Нет такого файла или каталога
+
+danil@danil-linux:~$ mkdir students
+
+danil@danil-linux:~$ ll
+
+итого 180
+
+drwxr-x--- 16 danil danil   4096 июн 24 15:19  ./
+
+drwxr-xr-x  3 root  root    4096 июн 19 18:37  ../
+
+-rw-------  1 danil danil   1352 июн 24 15:16  .bash_history
+
+-rw-r--r--  1 danil danil    220 июн 19 18:37  .bash_logout
+
+-rw-r--r--  1 danil danil   3771 июн 19 18:37  .bashrc
+
+drwx------ 14 danil danil   4096 июн 22 10:38  .cache/
+
+drwx------ 14 danil danil   4096 июн 19 20:21  .config/
+
+-rw-------  1 danil danil     20 июн 19 19:39  .lesshst
+
+drwx------  3 danil danil   4096 июн 19 18:43  .local/
+
+-rw-r--r--  1 danil danil    807 июн 19 18:37  .profile
+
+drwxrwx---  1 root  vboxsf 65536 июн 22 10:59  shared/
+
+drwx------  4 danil danil   4096 июн 19 19:18  snap/
+
+drwxrwxr-x  2 danil danil   4096 июн 24 15:19  students/
+
+-rw-r--r--  1 danil danil      0 июн 19 19:10  .sudo_as_admin_successful
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-clipboard-tty2-control.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-clipboard-tty2-service.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-draganddrop-tty2-control.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-draganddrop-tty2-service.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-hostversion-tty2-control.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-seamless-tty2-control.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-seamless-tty2-service.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-vmsvga-session-tty2-control.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-vmsvga-session-tty2-service.pid
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43  Видео/
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43  Документы/
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43  Загрузки/
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43  Изображения/
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43  Музыка/
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43  Общедоступные/
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43 'Рабочий стол'/
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43  Шаблоны/
+
+danil@danil-linux:~$ mkdir mentors
+
+danil@danil-linux:~$ ll
+
+итого 184
+
+drwxr-x--- 17 danil danil   4096 июн 24 15:19  ./
+
+drwxr-xr-x  3 root  root    4096 июн 19 18:37  ../
+
+-rw-------  1 danil danil   1352 июн 24 15:16  .bash_history
+
+-rw-r--r--  1 danil danil    220 июн 19 18:37  .bash_logout
+
+-rw-r--r--  1 danil danil   3771 июн 19 18:37  .bashrc
+
+drwx------ 14 danil danil   4096 июн 22 10:38  .cache/
+
+drwx------ 14 danil danil   4096 июн 19 20:21  .config/
+
+-rw-------  1 danil danil     20 июн 19 19:39  .lesshst
+
+drwx------  3 danil danil   4096 июн 19 18:43  .local/
+
+drwxrwxr-x  2 danil danil   4096 июн 24 15:19  mentors/
+
+-rw-r--r--  1 danil danil    807 июн 19 18:37  .profile
+
+drwxrwx---  1 root  vboxsf 65536 июн 22 10:59  shared/
+
+drwx------  4 danil danil   4096 июн 19 19:18  snap/
+
+drwxrwxr-x  2 danil danil   4096 июн 24 15:19  students/
+
+-rw-r--r--  1 danil danil      0 июн 19 19:10  .sudo_as_admin_successful
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-clipboard-tty2-control.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-clipboard-tty2-service.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-draganddrop-tty2-control.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-draganddrop-tty2-service.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-hostversion-tty2-control.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-seamless-tty2-control.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-seamless-tty2-service.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-vmsvga-session-tty2-control.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-vmsvga-session-tty2-service.pid
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43  Видео/
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43  Документы/
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43  Загрузки/
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43  Изображения/
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43  Музыка/
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43  Общедоступные/
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43 'Рабочий стол'/
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43  Шаблоны/
+
+danil@danil-linux:~$ cd students
+
+danil@danil-linux:~/students$ ll
+
+итого 8
+
+drwxrwxr-x  2 danil danil 4096 июн 24 15:19 ./
+
+drwxr-x--- 17 danil danil 4096 июн 24 15:19 ../
+
+danil@danil-linux:~/students$ touch students_list.txt
+
+danil@danil-linux:~/students$ ll
+
+итого 8
+
+drwxrwxr-x  2 danil danil 4096 июн 24 15:22 ./
+
+drwxr-x--- 17 danil danil 4096 июн 24 15:19 ../
+
+-rw-rw-r--  1 danil danil    0 июн 24 15:22 students_list.txt
+
+danil@danil-linux:~/students$ cd ../
+
+danil@danil-linux:~$ cd mentors
+
+danil@danil-linux:~/mentors$ touch mentors_list.txt
+
+danil@danil-linux:~/mentors$ cd ../
+
+danil@danil-linux:~$ cd students
+
+danil@danil-linux:~/students$ nano students_list.txt
+
+danil@danil-linux:~/students$ nano students_list.txt
+
+danil@danil-linux:~/students$ ll
+
+итого 12
+
+drwxrwxr-x  2 danil danil 4096 июн 24 15:37 ./
+
+drwxr-x--- 17 danil danil 4096 июн 24 15:19 ../
+
+-rw-rw-r--  1 danil danil 1174 июн 24 15:37 students_list.txt
+
+danil@danil-linux:~/students$ more students_list.txt
+
+Программа курса: Разработчик | Программирование.
+
+Группа: 4335/4337 | 08.03.2023.
+
+
+
+Студенты:
+
+1.Георгий Лезов
+
+
+
+2.Павел Белов
+
+
+
+3.Гварамадзе Роман
+
+
+
+4.Алексей Беляев
+
+
+
+5.Александр Мацук
+
+
+
+6.Андрей Кочетков
+
+
+
+7.Микаил Расулов
+
+
+
+8.Владимир Бессонов
+
+
+
+9.Ольга Солдатова
+
+
+
+10.Александр Соломкин
+
+
+
+11.Илья Бунаков
+
+
+
+12.Нурпейс Омирзак
+
+
+
+13.Орлов Антон
+
+
+
+14.Талена Полякова
+
+
+
+15.Лидия Лесникова
+
+
+
+16.Никита Марин
+
+
+
+17.Борис Кошелев
+
+
+
+18.Олег Лашин
+
+
+
+19.Георгий Федяров
+
+
+
+20.Сергей Савченко
+
+
+
+21.Иван Кондратьев
+
+
+
+22.Евгения Филимонова
+
+
+
+23.Азамат K
+
+
+
+24.Анастасия Трофимова
+
+
+
+25.Татьяна Ляпина
+
+
+
+26.Максим Фомин
+
+
+
+27.Александр Талан
+
+
+
+28.Сергей Кончаков
+
+
+
+29.Антон Кошелев
+
+
+
+30.Александр Ершов
+
+
+
+31.Александр Севрюгин
+
+
+
+32.Гор Мхитарян
+
+danil@danil-linux:~/students$ cd ../
+
+danil@danil-linux:~$ cd mentors
+
+danil@danil-linux:~/mentors$ cd ../
+
+danil@danil-linux:~$ cd students
+
+danil@danil-linux:~/students$ more students_list.txt
+
+Программа курса: Разработчик | Программирование.
+
+Группа: 4335/4337 | 08.03.2023.
+
+
+
+Студенты:
+
+1.Георгий Лезов
+
+
+
+2.Павел Белов
+
+
+
+3.Гварамадзе Роман
+
+
+
+4.Алексей Беляев
+
+
+
+5.Александр Мацук
+
+
+
+6.Андрей Кочетков
+
+
+
+7.Микаил Расулов
+
+
+
+8.Владимир Бессонов
+
+
+
+9.Ольга Солдатова
+
+
+
+10.Александр Соломкин
+
+
+
+11.Илья Бунаков
+
+
+
+12.Нурпейс Омирзак
+
+
+
+13.Орлов Антон
+
+
+
+14.Талена Полякова
+
+
+
+15.Лидия Лесникова
+
+
+
+16.Никита Марин
+
+
+
+17.Борис Кошелев
+
+
+
+18.Олег Лашин
+
+
+
+19.Георгий Федяров
+
+
+
+20.Сергей Савченко
+
+
+
+21.Иван Кондратьев
+
+
+
+22.Евгения Филимонова
+
+danil@danil-linux:~/students$ cd ../
+
+danil@danil-linux:~$ cd mentors
+
+danil@danil-linux:~/mentors$ more mentors_list.txt
+
+danil@danil-linux:~/mentors$ nano mentors_list.txt
+
+danil@danil-linux:~/mentors$ more mentors_list.txt
+
+Программа курса: Разработчик | Программирование.
+
+Группа: 4335/4337 | 08.03.2023.
+
+
+
+Менторы:
+
+
+
+На данный момент их нет. Преподаватель обещал его предоставить.
+
+danil@danil-linux:~/mentors$ cd ../
+
+danil@danil-linux:~$ mv mentors_list.txt students
+
+mv: не удалось выполнить stat для 'mentors_list.txt': Нет такого файла или каталога
+
+danil@danil-linux:~$ mv mentors_list.txt students/
+
+mv: не удалось выполнить stat для 'mentors_list.txt': Нет такого файла или каталога
+
+danil@danil-linux:~$ mv mentors students
+
+danil@danil-linux:~$ cd students
+
+danil@danil-linux:~/students$ ll
+
+итого 16
+
+drwxrwxr-x  3 danil danil 4096 июн 24 15:47 ./
+
+drwxr-x--- 16 danil danil 4096 июн 24 15:47 ../
+
+drwxrwxr-x  2 danil danil 4096 июн 24 15:43 mentors/
+
+-rw-rw-r--  1 danil danil 1174 июн 24 15:37 students_list.txt
+
+danil@danil-linux:~/students$ mv mentors_list.txt students
+
+mv: не удалось выполнить stat для 'mentors_list.txt': Нет такого файла или каталога
+
+danil@danil-linux:~/students$ cd mentors/
+
+danil@danil-linux:~/students/mentors$ mv mentors_list.txt students
+
+danil@danil-linux:~/students/mentors$ cd../
+
+bash: cd../: Нет такого файла или каталога
+
+danil@danil-linux:~/students/mentors$ cd ../
+
+danil@danil-linux:~/students$ ll
+
+итого 16
+
+drwxrwxr-x  3 danil danil 4096 июн 24 15:47 ./
+
+drwxr-x--- 16 danil danil 4096 июн 24 15:47 ../
+
+drwxrwxr-x  2 danil danil 4096 июн 24 15:47 mentors/
+
+-rw-rw-r--  1 danil danil 1174 июн 24 15:37 students_list.txt
+
+danil@danil-linux:~/students$ three
+
+Команда «three» не найдена. Возможно, вы имели в виду:
+
+  command 'tree' from snap tree (1.8.0+pkg-3fd6)
+
+  command 'tree' from deb tree (2.0.2-1)
+
+  command 'ttree' from deb libtemplate-perl (2.27-1build5)
+
+See 'snap info <snapname>' for additional versions.
+
+danil@danil-linux:~/students$ tree
+
+Команда «tree» не найдена, но может быть установлена с помощью:
+
+sudo snap install tree  # version 1.8.0+pkg-3fd6, or
+
+sudo apt  install tree  # version 2.0.2-1
+
+See 'snap info tree' for additional versions.
+
+danil@danil-linux:~/students$ sudo apt install tree
+
+[sudo] пароль для danil: 
+
+Чтение списков пакетов… Готово
+
+Построение дерева зависимостей… Готово
+
+Чтение информации о состоянии… Готово         
+
+Следующие НОВЫЕ пакеты будут установлены:
+
+  tree
+
+Обновлено 0 пакетов, установлено 1 новых пакетов, для удаления отмечено 0 пакетов, и 0 пакетов не обновлено.
+
+Необходимо скачать 47,9 kB архивов.
+
+После данной операции объём занятого дискового пространства возрастёт на 116 kB.
+
+Пол:1 http://ru.archive.ubuntu.com/ubuntu jammy/universe amd64 tree amd64 2.0.2-1 [47,9 kB]
+
+Получено 47,9 kB за 0с (264 kB/s)
+
+Выбор ранее не выбранного пакета tree.
+
+(Чтение базы данных … на данный момент установлено 187567 файлов и каталогов.)
+
+Подготовка к распаковке …/tree_2.0.2-1_amd64.deb …
+
+Распаковывается tree (2.0.2-1) …
+
+Настраивается пакет tree (2.0.2-1) …
+
+Обрабатываются триггеры для man-db (2.10.2-1) …
+
+danil@danil-linux:~/students$ tree
+
+.
+
+├── mentors
+
+│   └── students
+
+└── students_list.txt
+
+
+
+1 directory, 2 files
+
+danil@danil-linux:~/students$ cd mentors
+
+danil@danil-linux:~/students/mentors$ ll
+
+итого 12
+
+drwxrwxr-x 2 danil danil 4096 июн 24 15:47 ./
+
+drwxrwxr-x 3 danil danil 4096 июн 24 15:47 ../
+
+-rw-rw-r-- 1 danil danil  263 июн 24 15:42 students
+
+danil@danil-linux:~/students/mentors$ tree
+
+.
+
+└── students
+
+
+
+0 directories, 1 file
+
+danil@danil-linux:~/students/mentors$ cd ./
+
+danil@danil-linux:~/students/mentors$ cd ../
+
+danil@danil-linux:~/students$ cd ../
+
+danil@danil-linux:~$ ll
+
+итого 180
+
+drwxr-x--- 16 danil danil   4096 июн 24 15:47  ./
+
+drwxr-xr-x  3 root  root    4096 июн 19 18:37  ../
+
+-rw-------  1 danil danil   1352 июн 24 15:16  .bash_history
+
+-rw-r--r--  1 danil danil    220 июн 19 18:37  .bash_logout
+
+-rw-r--r--  1 danil danil   3771 июн 19 18:37  .bashrc
+
+drwx------ 14 danil danil   4096 июн 22 10:38  .cache/
+
+drwx------ 14 danil danil   4096 июн 19 20:21  .config/
+
+-rw-------  1 danil danil     20 июн 19 19:39  .lesshst
+
+drwx------  3 danil danil   4096 июн 19 18:43  .local/
+
+-rw-r--r--  1 danil danil    807 июн 19 18:37  .profile
+
+drwxrwx---  1 root  vboxsf 65536 июн 22 10:59  shared/
+
+drwx------  4 danil danil   4096 июн 19 19:18  snap/
+
+drwxrwxr-x  3 danil danil   4096 июн 24 15:47  students/
+
+-rw-r--r--  1 danil danil      0 июн 19 19:10  .sudo_as_admin_successful
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-clipboard-tty2-control.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-clipboard-tty2-service.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-draganddrop-tty2-control.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-draganddrop-tty2-service.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-hostversion-tty2-control.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-seamless-tty2-control.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-seamless-tty2-service.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-vmsvga-session-tty2-control.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-vmsvga-session-tty2-service.pid
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43  Видео/
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43  Документы/
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43  Загрузки/
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43  Изображения/
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43  Музыка/
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43  Общедоступные/
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43 'Рабочий стол'/
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43  Шаблоны/
+
+danil@danil-linux:~$ cd students
+
+danil@danil-linux:~/students$ rm mentors
+
+rm: невозможно удалить 'mentors': Это каталог
+
+danil@danil-linux:~/students$ rmdir mentors
+
+rmdir: не удалось удалить 'mentors': Каталог не пуст
+
+danil@danil-linux:~/students$ rm -rf mentors
+
+danil@danil-linux:~/students$ ll
+
+итого 12
+
+drwxrwxr-x  2 danil danil 4096 июн 24 15:52 ./
+
+drwxr-x--- 16 danil danil 4096 июн 24 15:47 ../
+
+-rw-rw-r--  1 danil danil 1174 июн 24 15:37 students_list.txt
+
+danil@danil-linux:~/students$ cd ../
+
+danil@danil-linux:~$ ll
+
+итого 180
+
+drwxr-x--- 16 danil danil   4096 июн 24 15:47  ./
+
+drwxr-xr-x  3 root  root    4096 июн 19 18:37  ../
+
+-rw-------  1 danil danil   1352 июн 24 15:16  .bash_history
+
+-rw-r--r--  1 danil danil    220 июн 19 18:37  .bash_logout
+
+-rw-r--r--  1 danil danil   3771 июн 19 18:37  .bashrc
+
+drwx------ 14 danil danil   4096 июн 22 10:38  .cache/
+
+drwx------ 14 danil danil   4096 июн 19 20:21  .config/
+
+-rw-------  1 danil danil     20 июн 19 19:39  .lesshst
+
+drwx------  3 danil danil   4096 июн 19 18:43  .local/
+
+-rw-r--r--  1 danil danil    807 июн 19 18:37  .profile
+
+drwxrwx---  1 root  vboxsf 65536 июн 22 10:59  shared/
+
+drwx------  4 danil danil   4096 июн 19 19:18  snap/
+
+drwxrwxr-x  2 danil danil   4096 июн 24 15:52  students/
+
+-rw-r--r--  1 danil danil      0 июн 19 19:10  .sudo_as_admin_successful
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-clipboard-tty2-control.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-clipboard-tty2-service.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-draganddrop-tty2-control.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-draganddrop-tty2-service.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-hostversion-tty2-control.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-seamless-tty2-control.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-seamless-tty2-service.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-vmsvga-session-tty2-control.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-vmsvga-session-tty2-service.pid
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43  Видео/
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43  Документы/
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43  Загрузки/
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43  Изображения/
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43  Музыка/
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43  Общедоступные/
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43 'Рабочий стол'/
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43  Шаблоны/
+
+danil@danil-linux:~$ mkdir mentors
+
+danil@danil-linux:~$ cd mentors
+
+danil@danil-linux:~/mentors$ ll
+
+итого 8
+
+drwxrwxr-x  2 danil danil 4096 июн 24 15:53 ./
+
+drwxr-x--- 17 danil danil 4096 июн 24 15:53 ../
+
+danil@danil-linux:~/mentors$ touch mentors_list.txt
+
+danil@danil-linux:~/mentors$ nano mentors_list.txt
+
+danil@danil-linux:~/mentors$ cd ../
+
+danil@danil-linux:~$ mv mentors_list.txt students
+
+mv: не удалось выполнить stat для 'mentors_list.txt': Нет такого файла или каталога
+
+danil@danil-linux:~$ cd mentors/
+
+danil@danil-linux:~/mentors$ ll
+
+итого 12
+
+drwxrwxr-x  2 danil danil 4096 июн 24 15:55 ./
+
+drwxr-x--- 17 danil danil 4096 июн 24 15:53 ../
+
+-rw-rw-r--  1 danil danil  237 июн 24 15:55 mentors_list.txt
+
+danil@danil-linux:~/mentors$ mv mentors_list.txt students
+
+danil@danil-linux:~/mentors$ ll
+
+итого 12
+
+drwxrwxr-x  2 danil danil 4096 июн 24 15:57 ./
+
+drwxr-x--- 17 danil danil 4096 июн 24 15:53 ../
+
+-rw-rw-r--  1 danil danil  237 июн 24 15:55 students
+
+danil@danil-linux:~/mentors$ cd students/
+
+bash: cd: students/: Это не каталог
+
+danil@danil-linux:~/mentors$ more students
+
+Программа курса: Разработчик | Программирование.
+
+
+
+Группа: 4335/4337 | 08.03.2023.
+
+
+
+Наставники:
+
+
+
+Их нет. ПРеподаватель обещал их предоставить.
+
+danil@danil-linux:~/mentors$ mv students mentors_list.txt
+
+danil@danil-linux:~/mentors$ ll
+
+итого 12
+
+drwxrwxr-x  2 danil danil 4096 июн 24 15:58 ./
+
+drwxr-x--- 17 danil danil 4096 июн 24 15:53 ../
+
+-rw-rw-r--  1 danil danil  237 июн 24 15:55 mentors_list.txt
+
+danil@danil-linux:~/mentors$ cp mentors_list.txt students
+
+danil@danil-linux:~/mentors$ ll
+
+итого 16
+
+drwxrwxr-x  2 danil danil 4096 июн 24 16:00 ./
+
+drwxr-x--- 17 danil danil 4096 июн 24 15:53 ../
+
+-rw-rw-r--  1 danil danil  237 июн 24 15:55 mentors_list.txt
+
+-rw-rw-r--  1 danil danil  237 июн 24 16:00 students
+
+danil@danil-linux:~/mentors$ rm students
+
+danil@danil-linux:~/mentors$ ll
+
+итого 12
+
+drwxrwxr-x  2 danil danil 4096 июн 24 16:01 ./
+
+drwxr-x--- 17 danil danil 4096 июн 24 15:53 ../
+
+-rw-rw-r--  1 danil danil  237 июн 24 15:55 mentors_list.txt
+
+danil@danil-linux:~/mentors$ cd ../
+
+danil@danil-linux:~$ cp mentors_list.txt ~/students
+
+cp: не удалось выполнить stat для 'mentors_list.txt': Нет такого файла или каталога
+
+danil@danil-linux:~$ mv mentors_list.txt ~/students
+
+mv: не удалось выполнить stat для 'mentors_list.txt': Нет такого файла или каталога
+
+danil@danil-linux:~$ cd mentors/
+
+danil@danil-linux:~/mentors$ mv mentors_list.txt ~/students
+
+danil@danil-linux:~/mentors$ ll
+
+итого 8
+
+drwxrwxr-x  2 danil danil 4096 июн 24 16:03 ./
+
+drwxr-x--- 17 danil danil 4096 июн 24 15:53 ../
+
+danil@danil-linux:~/mentors$ cd ../
+
+danil@danil-linux:~$ cd students/
+
+danil@danil-linux:~/students$ ll
+
+итого 16
+
+drwxrwxr-x  2 danil danil 4096 июн 24 16:03 ./
+
+drwxr-x--- 17 danil danil 4096 июн 24 15:53 ../
+
+-rw-rw-r--  1 danil danil  237 июн 24 15:55 mentors_list.txt
+
+-rw-rw-r--  1 danil danil 1174 июн 24 15:37 students_list.txt
+
+danil@danil-linux:~/students$ cd ../
+
+danil@danil-linux:~$ ll
+
+итого 184
+
+drwxr-x--- 17 danil danil   4096 июн 24 15:53  ./
+
+drwxr-xr-x  3 root  root    4096 июн 19 18:37  ../
+
+-rw-------  1 danil danil   1352 июн 24 15:16  .bash_history
+
+-rw-r--r--  1 danil danil    220 июн 19 18:37  .bash_logout
+
+-rw-r--r--  1 danil danil   3771 июн 19 18:37  .bashrc
+
+drwx------ 14 danil danil   4096 июн 22 10:38  .cache/
+
+drwx------ 14 danil danil   4096 июн 19 20:21  .config/
+
+-rw-------  1 danil danil     20 июн 19 19:39  .lesshst
+
+drwx------  3 danil danil   4096 июн 19 18:43  .local/
+
+drwxrwxr-x  2 danil danil   4096 июн 24 16:03  mentors/
+
+-rw-r--r--  1 danil danil    807 июн 19 18:37  .profile
+
+drwxrwx---  1 root  vboxsf 65536 июн 22 10:59  shared/
+
+drwx------  4 danil danil   4096 июн 19 19:18  snap/
+
+drwxrwxr-x  2 danil danil   4096 июн 24 16:03  students/
+
+-rw-r--r--  1 danil danil      0 июн 19 19:10  .sudo_as_admin_successful
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-clipboard-tty2-control.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-clipboard-tty2-service.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-draganddrop-tty2-control.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-draganddrop-tty2-service.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-hostversion-tty2-control.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-seamless-tty2-control.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-seamless-tty2-service.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-vmsvga-session-tty2-control.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-vmsvga-session-tty2-service.pid
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43  Видео/
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43  Документы/
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43  Загрузки/
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43  Изображения/
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43  Музыка/
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43  Общедоступные/
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43 'Рабочий стол'/
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43  Шаблоны/
+
+danil@danil-linux:~$ cd mentors
+
+danil@danil-linux:~/mentors$ ll
+
+итого 8
+
+drwxrwxr-x  2 danil danil 4096 июн 24 16:03 ./
+
+drwxr-x--- 17 danil danil 4096 июн 24 15:53 ../
+
+danil@danil-linux:~/mentors$ cd ..
+
+danil@danil-linux:~$ cd students
+
+danil@danil-linux:~/students$ ll
+
+итого 16
+
+drwxrwxr-x  2 danil danil 4096 июн 24 16:03 ./
+
+drwxr-x--- 17 danil danil 4096 июн 24 15:53 ../
+
+-rw-rw-r--  1 danil danil  237 июн 24 15:55 mentors_list.txt
+
+-rw-rw-r--  1 danil danil 1174 июн 24 15:37 students_list.txt
+
+danil@danil-linux:~/students$ cd ..
+
+danil@danil-linux:~$ rm -rf mentors
+
+danil@danil-linux:~$ ll
+
+итого 180
+
+drwxr-x--- 16 danil danil   4096 июн 24 16:05  ./
+
+drwxr-xr-x  3 root  root    4096 июн 19 18:37  ../
+
+-rw-------  1 danil danil   1352 июн 24 15:16  .bash_history
+
+-rw-r--r--  1 danil danil    220 июн 19 18:37  .bash_logout
+
+-rw-r--r--  1 danil danil   3771 июн 19 18:37  .bashrc
+
+drwx------ 14 danil danil   4096 июн 22 10:38  .cache/
+
+drwx------ 14 danil danil   4096 июн 19 20:21  .config/
+
+-rw-------  1 danil danil     20 июн 19 19:39  .lesshst
+
+drwx------  3 danil danil   4096 июн 19 18:43  .local/
+
+-rw-r--r--  1 danil danil    807 июн 19 18:37  .profile
+
+drwxrwx---  1 root  vboxsf 65536 июн 22 10:59  shared/
+
+drwx------  4 danil danil   4096 июн 19 19:18  snap/
+
+drwxrwxr-x  2 danil danil   4096 июн 24 16:03  students/
+
+-rw-r--r--  1 danil danil      0 июн 19 19:10  .sudo_as_admin_successful
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-clipboard-tty2-control.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-clipboard-tty2-service.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-draganddrop-tty2-control.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-draganddrop-tty2-service.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-hostversion-tty2-control.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-seamless-tty2-control.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-seamless-tty2-service.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-vmsvga-session-tty2-control.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-vmsvga-session-tty2-service.pid
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43  Видео/
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43  Документы/
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43  Загрузки/
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43  Изображения/
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43  Музыка/
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43  Общедоступные/
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43 'Рабочий стол'/
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43  Шаблоны/
+
+danil@danil-linux:~$ mv students students_and_mentors
+
+danil@danil-linux:~$ ll
+
+итого 180
+
+drwxr-x--- 16 danil danil   4096 июн 24 16:05  ./
+
+drwxr-xr-x  3 root  root    4096 июн 19 18:37  ../
+
+-rw-------  1 danil danil   1352 июн 24 15:16  .bash_history
+
+-rw-r--r--  1 danil danil    220 июн 19 18:37  .bash_logout
+
+-rw-r--r--  1 danil danil   3771 июн 19 18:37  .bashrc
+
+drwx------ 14 danil danil   4096 июн 22 10:38  .cache/
+
+drwx------ 14 danil danil   4096 июн 19 20:21  .config/
+
+-rw-------  1 danil danil     20 июн 19 19:39  .lesshst
+
+drwx------  3 danil danil   4096 июн 19 18:43  .local/
+
+-rw-r--r--  1 danil danil    807 июн 19 18:37  .profile
+
+drwxrwx---  1 root  vboxsf 65536 июн 22 10:59  shared/
+
+drwx------  4 danil danil   4096 июн 19 19:18  snap/
+
+drwxrwxr-x  2 danil danil   4096 июн 24 16:03  students_and_mentors/
+
+-rw-r--r--  1 danil danil      0 июн 19 19:10  .sudo_as_admin_successful
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-clipboard-tty2-control.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-clipboard-tty2-service.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-draganddrop-tty2-control.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-draganddrop-tty2-service.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-hostversion-tty2-control.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-seamless-tty2-control.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-seamless-tty2-service.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-vmsvga-session-tty2-control.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-vmsvga-session-tty2-service.pid
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43  Видео/
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43  Документы/
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43  Загрузки/
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43  Изображения/
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43  Музыка/
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43  Общедоступные/
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43 'Рабочий стол'/
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43  Шаблоны/
+
+danil@danil-linux:~$ cd students_and_mentors/
+
+danil@danil-linux:~/students_and_mentors$ ll
+
+итого 16
+
+drwxrwxr-x  2 danil danil 4096 июн 24 16:03 ./
+
+drwxr-x--- 16 danil danil 4096 июн 24 16:05 ../
+
+-rw-rw-r--  1 danil danil  237 июн 24 15:55 mentors_list.txt
+
+-rw-rw-r--  1 danil danil 1174 июн 24 15:37 students_list.txt
+
+danil@danil-linux:~/students_and_mentors$ cd..
+
+cd..: команда не найдена
+
+danil@danil-linux:~/students_and_mentors$ cd ..
+
+danil@danil-linux:~$ ll
+
+итого 180
+
+drwxr-x--- 16 danil danil   4096 июн 24 16:05  ./
+
+drwxr-xr-x  3 root  root    4096 июн 19 18:37  ../
+
+-rw-------  1 danil danil   1352 июн 24 15:16  .bash_history
+
+-rw-r--r--  1 danil danil    220 июн 19 18:37  .bash_logout
+
+-rw-r--r--  1 danil danil   3771 июн 19 18:37  .bashrc
+
+drwx------ 14 danil danil   4096 июн 22 10:38  .cache/
+
+drwx------ 14 danil danil   4096 июн 19 20:21  .config/
+
+-rw-------  1 danil danil     20 июн 19 19:39  .lesshst
+
+drwx------  3 danil danil   4096 июн 19 18:43  .local/
+
+-rw-r--r--  1 danil danil    807 июн 19 18:37  .profile
+
+drwxrwx---  1 root  vboxsf 65536 июн 22 10:59  shared/
+
+drwx------  4 danil danil   4096 июн 19 19:18  snap/
+
+drwxrwxr-x  2 danil danil   4096 июн 24 16:03  students_and_mentors/
+
+-rw-r--r--  1 danil danil      0 июн 19 19:10  .sudo_as_admin_successful
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-clipboard-tty2-control.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-clipboard-tty2-service.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-draganddrop-tty2-control.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-draganddrop-tty2-service.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-hostversion-tty2-control.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-seamless-tty2-control.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-seamless-tty2-service.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-vmsvga-session-tty2-control.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-vmsvga-session-tty2-service.pid
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43  Видео/
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43  Документы/
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43  Загрузки/
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43  Изображения/
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43  Музыка/
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43  Общедоступные/
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43 'Рабочий стол'/
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43  Шаблоны/
+
+danil@danil-linux:~$ rm -rf students_and_mentors/
+
+danil@danil-linux:~$ ll
+
+итого 176
+
+drwxr-x--- 15 danil danil   4096 июн 24 16:07  ./
+
+drwxr-xr-x  3 root  root    4096 июн 19 18:37  ../
+
+-rw-------  1 danil danil   1352 июн 24 15:16  .bash_history
+
+-rw-r--r--  1 danil danil    220 июн 19 18:37  .bash_logout
+
+-rw-r--r--  1 danil danil   3771 июн 19 18:37  .bashrc
+
+drwx------ 14 danil danil   4096 июн 22 10:38  .cache/
+
+drwx------ 14 danil danil   4096 июн 19 20:21  .config/
+
+-rw-------  1 danil danil     20 июн 19 19:39  .lesshst
+
+drwx------  3 danil danil   4096 июн 19 18:43  .local/
+
+-rw-r--r--  1 danil danil    807 июн 19 18:37  .profile
+
+drwxrwx---  1 root  vboxsf 65536 июн 22 10:59  shared/
+
+drwx------  4 danil danil   4096 июн 19 19:18  snap/
+
+-rw-r--r--  1 danil danil      0 июн 19 19:10  .sudo_as_admin_successful
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-clipboard-tty2-control.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-clipboard-tty2-service.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-draganddrop-tty2-control.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-draganddrop-tty2-service.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-hostversion-tty2-control.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-seamless-tty2-control.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-seamless-tty2-service.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-vmsvga-session-tty2-control.pid
+
+-rw-r-----  1 danil danil      5 июн 24 15:12  .vboxclient-vmsvga-session-tty2-service.pid
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43  Видео/
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43  Документы/
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43  Загрузки/
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43  Изображения/
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43  Музыка/
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43  Общедоступные/
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43 'Рабочий стол'/
+
+drwxr-xr-x  2 danil danil   4096 июн 19 18:43  Шаблоны/
+
+danil@danil-linux:~$ 
