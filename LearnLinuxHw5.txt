@@ -3,67 +3,69 @@
 danil@danil-linux:~$ sudo apt update
 Сущ:1 http://ru.archive.ubuntu.com/ubuntu jammy InRelease
 Сущ:2 http://ru.archive.ubuntu.com/ubuntu jammy-updates InRelease
-Сущ:3 http://nginx.org/packages/ubuntu jammy InRelease
+Сущ:3 https://download.virtualbox.org/virtualbox/debian jammy InRelease
 Сущ:4 http://security.ubuntu.com/ubuntu jammy-security InRelease
-Сущ:5 http://ru.archive.ubuntu.com/ubuntu jammy-backports InRelease
-Сущ:6 https://download.virtualbox.org/virtualbox/debian jammy InRelease
+Пол:5 http://ru.archive.ubuntu.com/ubuntu jammy-backports InRelease [108 kB]
+Получено 108 kB за 1с (144 kB/s)
 Чтение списков пакетов… Готово
 Построение дерева зависимостей… Готово
 Чтение информации о состоянии… Готово
 Может быть обновлено 22 пакета. Запустите «apt list --upgradable» для их показа.
-W: http://nginx.org/packages/ubuntu/dists/jammy/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
-N: Пропускается получение настроенного файла «nginx/binary-i386/Packages», так как репозиторий «http://nginx.org/packages/ubuntu jammy InRelease» не поддерживает архитектуру «i386»
 danil@danil-linux:~$ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys C300EE8C
 Warning: apt-key is deprecated. Manage keyring files in trusted.gpg.d instead (see apt-key(8)).
-Executing: /tmp/apt-key-gpghome.MUrBhTkhq1/gpg.1.sh --keyserver keyserver.ubuntu.com --recv-keys C300EE8C
-gpg: ключ 00A6F0A3C300EE8C: импортирован открытый ключ "Launchpad Stable"
+Executing: /tmp/apt-key-gpghome.NaowY40Sln/gpg.1.sh --keyserver keyserver.ubuntu.com --recv-keys C300EE8C
+gpg: ключ 00A6F0A3C300EE8C: "Launchpad Stable" не изменен
 gpg: Всего обработано: 1
-gpg:               импортировано: 1
-danil@danil-linux:~$ sudo su
-root@danil-linux:/home/danil# sudo echo "deb  https://ppa.launchpad.net/nginx/stable/ubuntu lucid main" >> /etc/apt/sources.list
-root@danil-linux:/home/danil# apt update
-Сущ:1 http://ru.archive.ubuntu.com/ubuntu jammy InRelease
-Сущ:2 http://nginx.org/packages/ubuntu jammy InRelease
-Сущ:3 http://ru.archive.ubuntu.com/ubuntu jammy-updates InRelease
-Сущ:4 https://download.virtualbox.org/virtualbox/debian jammy InRelease
-Сущ:5 http://ru.archive.ubuntu.com/ubuntu jammy-backports InRelease
-Игн:6 https://ppa.launchpad.net/nginx/stable/ubuntu lucid InRelease
-Сущ:7 http://security.ubuntu.com/ubuntu jammy-security InRelease
-Игн:6 https://ppa.launchpad.net/nginx/stable/ubuntu lucid InRelease
-Игн:6 https://ppa.launchpad.net/nginx/stable/ubuntu lucid InRelease
-Ошб:6 https://ppa.launchpad.net/nginx/stable/ubuntu lucid InRelease
-  Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 185.125.190.52 443]
+gpg:              неизмененных: 1
+danil@danil-linux:~$ sudo apt install curl gnupg2 ca-certificates lsb-release ubuntu-keyring
 Чтение списков пакетов… Готово
 Построение дерева зависимостей… Готово
 Чтение информации о состоянии… Готово
-Может быть обновлено 22 пакета. Запустите «apt list --upgradable» для их показа.
-W: http://nginx.org/packages/ubuntu/dists/jammy/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
-N: Пропускается получение настроенного файла «nginx/binary-i386/Packages», так как репозиторий «http://nginx.org/packages/ubuntu jammy InRelease» не поддерживает архитектуру «i386»
-W: Не удалось получить https://ppa.launchpad.net/nginx/stable/ubuntu/dists/lucid/InRelease  Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 185.125.190.52 443]
-W: Некоторые индексные файлы скачать не удалось. Они были проигнорированы, или вместо них были использованы старые версии.
-root@danil-linux:/home/danil# exit
-exit
+Уже установлен пакет lsb-release самой новой версии (11.1.0ubuntu4).
+lsb-release помечен как установленный вручную.
+Уже установлен пакет ubuntu-keyring самой новой версии (2021.03.26).
+ubuntu-keyring помечен как установленный вручную.
+Уже установлен пакет ca-certificates самой новой версии (20230311ubuntu0.22.04.1).
+ca-certificates помечен как установленный вручную.
+Уже установлен пакет curl самой новой версии (7.81.0-1ubuntu1.10).
+Следующие НОВЫЕ пакеты будут установлены:
+  gnupg2
+Обновлено 0 пакетов, установлено 1 новых пакетов, для удаления отмечено 0 пакетов, и 22 пакетов не обновлено.
+Необходимо скачать 5 548 B архивов.
+После данной операции объём занятого дискового пространства возрастёт на 52,2 kB.
+Хотите продолжить? [Д/н] y
+Пол:1 http://ru.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 gnupg2 all 2.2.27-3ubuntu2.1 [5 548 B]
+Получено 5 548 B за 0с (16,9 kB/s)
+Выбор ранее не выбранного пакета gnupg2.
+(Чтение базы данных … на данный момент установлено 189370 файлов и каталогов.)
+Подготовка к распаковке …/gnupg2_2.2.27-3ubuntu2.1_all.deb …
+Распаковывается gnupg2 (2.2.27-3ubuntu2.1) …
+Настраивается пакет gnupg2 (2.2.27-3ubuntu2.1) …
+Обрабатываются триггеры для man-db (2.10.2-1) …
+danil@danil-linux:~$ curl https://nginx.org/keys/nginx_signing.key | gpg --dearmor \
+>     | sudo tee /usr/share/keyrings/nginx-archive-keyring.gpg >/dev/null
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  1561  100  1561    0     0   1822      0 --:--:-- --:--:-- --:--:--  1821
+danil@danil-linux:~$ gpg --dry-run --quiet --no-keyring --import --import-options import-show /usr/share/keyrings/nginx-archive-keyring.gpg
+pub   rsa2048 2011-08-19 [SC] [годен до: 2024-06-14]
+      573BFD6B3D8FBC641079A6ABABF5BD827BD9BF62
+uid                      nginx signing key <signing-key@nginx.com>
 danil@danil-linux:~$ sudo apt update
-Сущ:1 http://security.ubuntu.com/ubuntu jammy-security InRelease
-Игн:2 https://ppa.launchpad.net/nginx/stable/ubuntu lucid InRelease
-Сущ:3 http://ru.archive.ubuntu.com/ubuntu jammy InRelease
-Сущ:4 http://nginx.org/packages/ubuntu jammy InRelease
-Сущ:5 http://ru.archive.ubuntu.com/ubuntu jammy-updates InRelease
-Сущ:6 https://download.virtualbox.org/virtualbox/debian jammy InRelease
-Сущ:7 http://ru.archive.ubuntu.com/ubuntu jammy-backports InRelease
-Игн:2 https://ppa.launchpad.net/nginx/stable/ubuntu lucid InRelease
-Игн:2 https://ppa.launchpad.net/nginx/stable/ubuntu lucid InRelease
-Ошб:2 https://ppa.launchpad.net/nginx/stable/ubuntu lucid InRelease
-  Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 185.125.190.52 443]
+Сущ:1 http://ru.archive.ubuntu.com/ubuntu jammy InRelease
+Сущ:2 http://ru.archive.ubuntu.com/ubuntu jammy-updates InRelease
+Сущ:3 https://download.virtualbox.org/virtualbox/debian jammy InRelease
+Пол:4 http://nginx.org/packages/ubuntu jammy InRelease [3 587 B]
+Пол:5 http://ru.archive.ubuntu.com/ubuntu jammy-backports InRelease [108 kB]
+Сущ:6 http://security.ubuntu.com/ubuntu jammy-security InRelease
+Пол:7 http://nginx.org/packages/ubuntu jammy/nginx amd64 Packages [13,3 kB]
+Получено 125 kB за 1с (130 kB/s)
 Чтение списков пакетов… Готово
 Построение дерева зависимостей… Готово
 Чтение информации о состоянии… Готово
 Может быть обновлено 22 пакета. Запустите «apt list --upgradable» для их показа.
-W: http://nginx.org/packages/ubuntu/dists/jammy/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
 N: Пропускается получение настроенного файла «nginx/binary-i386/Packages», так как репозиторий «http://nginx.org/packages/ubuntu jammy InRelease» не поддерживает архитектуру «i386»
-W: Не удалось получить https://ppa.launchpad.net/nginx/stable/ubuntu/dists/lucid/InRelease  Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 185.125.190.52 443]
-W: Некоторые индексные файлы скачать не удалось. Они были проигнорированы, или вместо них были использованы старые версии.
-danil@danil-linux:~$ sudo apt install nginx -y
+danil@danil-linux:~$ sudo apt install nginx
 Чтение списков пакетов… Готово
 Построение дерева зависимостей… Готово
 Чтение информации о состоянии… Готово
@@ -73,9 +75,9 @@ danil@danil-linux:~$ sudo apt install nginx -y
 Необходимо скачать 1 012 kB архивов.
 После данной операции объём занятого дискового пространства возрастёт на 3 283 kB.
 Пол:1 http://nginx.org/packages/ubuntu jammy/nginx amd64 nginx amd64 1.24.0-1~jammy [1 012 kB]
-Получено 1 012 kB за 5с (198 kB/s)
+Получено 1 012 kB за 2с (538 kB/s)
 Выбор ранее не выбранного пакета nginx.
-(Чтение базы данных … на данный момент установлено 189370 файлов и каталогов.)
+(Чтение базы данных … на данный момент установлено 189376 файлов и каталогов.)
 Подготовка к распаковке …/nginx_1.24.0-1~jammy_amd64.deb …
 ----------------------------------------------------------------------
 
@@ -94,47 +96,60 @@ Commercial subscriptions for nginx are available on:
 ----------------------------------------------------------------------
 Распаковывается nginx (1.24.0-1~jammy) …
 Настраивается пакет nginx (1.24.0-1~jammy) …
+/var/lib/dpkg/info/nginx.postinst: 27: kill: Usage: kill [-s sigspec | -signum | -sigspec] [pid | job]... or
+kill -l [exitstatus]
 Created symlink /etc/systemd/system/multi-user.target.wants/nginx.service → /lib/systemd/system/nginx.service.
 Обрабатываются триггеры для man-db (2.10.2-1) …
-danil@danil-linux:~$ apt show nginx
-Package: nginx
-Version: 1.24.0-1~jammy
-Priority: optional
-Section: httpd
-Maintainer: NGINX Packaging <nginx-packaging@f5.com>
-Installed-Size: 3 283 kB
-Provides: httpd, nginx, nginx-r1.24.0
-Depends: libc6 (>= 2.34), libcrypt1 (>= 1:4.1.0), libpcre2-8-0 (>= 10.22), libssl3 (>= 3.0.0~~alpha1), zlib1g (>= 1:1.1.4), lsb-base (>= 3.0-6), adduser
-Conflicts: nginx-common, nginx-core
-Replaces: nginx-common, nginx-core
-Homepage: https://nginx.org
-Download-Size: 1 012 kB
-APT-Manual-Installed: yes
-APT-Sources: http://nginx.org/packages/ubuntu jammy/nginx amd64 Packages
-Description: high performance web server
- nginx [engine x] is an HTTP and reverse proxy server, as well as
- a mail proxy server.
-
-N: Есть 6 дополнительных записей. Используйте «-a» для их просмотра.
-danil@danil-linux:~$ sudo nginx -t
-nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
-nginx: configuration file /etc/nginx/nginx.conf test is successful
-danil@danil-linux:~$ sudo apt remove nginx -y
-Чтение списков пакетов… Готово
-Построение дерева зависимостей… Готово
-Чтение информации о состоянии… Готово
-Следующие пакеты будут УДАЛЕНЫ:
-  nginx
-Обновлено 0 пакетов, установлено 0 новых пакетов, для удаления отмечено 1 пакетов, и 22 пакетов не обновлено.
-После данной операции объём занятого дискового пространства уменьшится на 3 283 kB.
-(Чтение базы данных … на данный момент установлено 189404 файла и каталога.)
+danil@danil-linux:~$ sudo dpkg -r nginx
+(Чтение базы данных … на данный момент установлено 189410 файлов и каталогов.)
 Удаляется nginx (1.24.0-1~jammy) …
 Обрабатываются триггеры для man-db (2.10.2-1) …
-danil@danil-linux:~$ sudo dpkg -r nginx
-dpkg: предупреждение: игнорируется запрос на удаление неустановленного пакета nginx
 
 2 задание
 
-
+danil@danil-linux:~$ sudo snap install postman
+Загрузить пакет "postman" (209) с канала "v10/stable"                                                                                                                                            22%  283kB/s 10.0мpostman (v10/stable) 10.15.0 от Postman, Inc. (postman-inc✓) установлен
+danil@danil-linux:~$ snap list
+Название                   Версия                      Правка  Канал            Издатель      Примечание
+bare                       1.0                         5       latest/stable    canonical✓    base
+chromium-ffmpeg            0.1                         34      latest/stable    canonical✓    -
+core18                     20230530                    2785    latest/stable    canonical✓    base
+core20                     20230622                    1974    latest/stable    canonical✓    base
+core22                     20230629                    806     latest/stable    canonical✓    base
+firefox                    115.0.1-1                   2880    latest/stable/…  mozilla✓      -
+gnome-3-28-1804            3.28.0-19-g98f9e67.98f9e67  198     latest/stable    canonical✓    -
+gnome-3-38-2004            0+git.6f39565               140     latest/stable/…  canonical✓    -
+gnome-42-2204              0+git.ff35a85               120     latest/stable    canonical✓    -
+gtk-common-themes          0.1-81-g442e511             1535    latest/stable/…  canonical✓    -
+postman                    10.15.0                     209     v10/stable       postman-inc✓  -
+snap-store                 41.3-71-g709398e            959     latest/stable/…  canonical✓    -
+snapd                      2.59.5                      19457   latest/stable    canonical✓    snapd
+snapd-desktop-integration  0.9                         83      latest/stable/…  canonical✓    -
 
 3 задание
+
+danil@danil-linux:~$ cd GeekBrains/
+danil@danil-linux:~/GeekBrains$ nano test.txt
+danil@danil-linux:~/GeekBrains$ danil@danil-linux:~/GeekBrains$ ll
+итого 12
+drwxrwxr-x  2 danil danil 4096 июл 10 20:41 ./
+drwxr-x--- 16 danil danil 4096 июл 10 19:39 ../
+-rw-rw-r--  1 danil danil    0 июл  6 19:00 f1.txt
+-rw-rw-r--  1 danil danil    0 июл  6 19:00 f2.bak
+-rw-rw-r--  1 danil danil    0 июл  6 19:00 f3.tmp
+-rw-rw-r--  1 danil danil    0 июл  6 19:01 f4.backup
+-rw-rw-r--  1 danil danil   38 июл 10 20:41 test.txt
+danil@danil-linux:~/GeekBrains$ crontab -l
+no crontab for danil
+danil@danil-linux:~/GeekBrains$ crontab -e
+no crontab for danil - using an empty one
+crontab: installing new crontab
+danil@danil-linux:~/GeekBrains$ crontab -l
+# Вариант решение утилитой cat
+*/10 *  *  *  * cat /home/danil/GeekBrains/test.txt > /home/danil/GeekBrains/test2.txt.bak
+
+# Вариант решения утилитой cp (копирование файла)
+0,10,20,30,40,50 *  *  *  * cp -b /home/danil/GeekBrains/test.txt /home/danil/GeekBrains/test2.txt.bak
+danil@danil-linux:~/GeekBrains$ crontab -r
+danil@danil-linux:~/GeekBrains$ crontab -l
+no crontab for danil
