@@ -1,0 +1,140 @@
+1 задание
+
+danil@danil-linux:~$ sudo apt update
+Сущ:1 http://ru.archive.ubuntu.com/ubuntu jammy InRelease
+Сущ:2 http://ru.archive.ubuntu.com/ubuntu jammy-updates InRelease
+Сущ:3 http://nginx.org/packages/ubuntu jammy InRelease
+Сущ:4 http://security.ubuntu.com/ubuntu jammy-security InRelease
+Сущ:5 http://ru.archive.ubuntu.com/ubuntu jammy-backports InRelease
+Сущ:6 https://download.virtualbox.org/virtualbox/debian jammy InRelease
+Чтение списков пакетов… Готово
+Построение дерева зависимостей… Готово
+Чтение информации о состоянии… Готово
+Может быть обновлено 22 пакета. Запустите «apt list --upgradable» для их показа.
+W: http://nginx.org/packages/ubuntu/dists/jammy/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
+N: Пропускается получение настроенного файла «nginx/binary-i386/Packages», так как репозиторий «http://nginx.org/packages/ubuntu jammy InRelease» не поддерживает архитектуру «i386»
+danil@danil-linux:~$ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys C300EE8C
+Warning: apt-key is deprecated. Manage keyring files in trusted.gpg.d instead (see apt-key(8)).
+Executing: /tmp/apt-key-gpghome.MUrBhTkhq1/gpg.1.sh --keyserver keyserver.ubuntu.com --recv-keys C300EE8C
+gpg: ключ 00A6F0A3C300EE8C: импортирован открытый ключ "Launchpad Stable"
+gpg: Всего обработано: 1
+gpg:               импортировано: 1
+danil@danil-linux:~$ sudo su
+root@danil-linux:/home/danil# sudo echo "deb  https://ppa.launchpad.net/nginx/stable/ubuntu lucid main" >> /etc/apt/sources.list
+root@danil-linux:/home/danil# apt update
+Сущ:1 http://ru.archive.ubuntu.com/ubuntu jammy InRelease
+Сущ:2 http://nginx.org/packages/ubuntu jammy InRelease
+Сущ:3 http://ru.archive.ubuntu.com/ubuntu jammy-updates InRelease
+Сущ:4 https://download.virtualbox.org/virtualbox/debian jammy InRelease
+Сущ:5 http://ru.archive.ubuntu.com/ubuntu jammy-backports InRelease
+Игн:6 https://ppa.launchpad.net/nginx/stable/ubuntu lucid InRelease
+Сущ:7 http://security.ubuntu.com/ubuntu jammy-security InRelease
+Игн:6 https://ppa.launchpad.net/nginx/stable/ubuntu lucid InRelease
+Игн:6 https://ppa.launchpad.net/nginx/stable/ubuntu lucid InRelease
+Ошб:6 https://ppa.launchpad.net/nginx/stable/ubuntu lucid InRelease
+  Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 185.125.190.52 443]
+Чтение списков пакетов… Готово
+Построение дерева зависимостей… Готово
+Чтение информации о состоянии… Готово
+Может быть обновлено 22 пакета. Запустите «apt list --upgradable» для их показа.
+W: http://nginx.org/packages/ubuntu/dists/jammy/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
+N: Пропускается получение настроенного файла «nginx/binary-i386/Packages», так как репозиторий «http://nginx.org/packages/ubuntu jammy InRelease» не поддерживает архитектуру «i386»
+W: Не удалось получить https://ppa.launchpad.net/nginx/stable/ubuntu/dists/lucid/InRelease  Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 185.125.190.52 443]
+W: Некоторые индексные файлы скачать не удалось. Они были проигнорированы, или вместо них были использованы старые версии.
+root@danil-linux:/home/danil# exit
+exit
+danil@danil-linux:~$ sudo apt update
+Сущ:1 http://security.ubuntu.com/ubuntu jammy-security InRelease
+Игн:2 https://ppa.launchpad.net/nginx/stable/ubuntu lucid InRelease
+Сущ:3 http://ru.archive.ubuntu.com/ubuntu jammy InRelease
+Сущ:4 http://nginx.org/packages/ubuntu jammy InRelease
+Сущ:5 http://ru.archive.ubuntu.com/ubuntu jammy-updates InRelease
+Сущ:6 https://download.virtualbox.org/virtualbox/debian jammy InRelease
+Сущ:7 http://ru.archive.ubuntu.com/ubuntu jammy-backports InRelease
+Игн:2 https://ppa.launchpad.net/nginx/stable/ubuntu lucid InRelease
+Игн:2 https://ppa.launchpad.net/nginx/stable/ubuntu lucid InRelease
+Ошб:2 https://ppa.launchpad.net/nginx/stable/ubuntu lucid InRelease
+  Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 185.125.190.52 443]
+Чтение списков пакетов… Готово
+Построение дерева зависимостей… Готово
+Чтение информации о состоянии… Готово
+Может быть обновлено 22 пакета. Запустите «apt list --upgradable» для их показа.
+W: http://nginx.org/packages/ubuntu/dists/jammy/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
+N: Пропускается получение настроенного файла «nginx/binary-i386/Packages», так как репозиторий «http://nginx.org/packages/ubuntu jammy InRelease» не поддерживает архитектуру «i386»
+W: Не удалось получить https://ppa.launchpad.net/nginx/stable/ubuntu/dists/lucid/InRelease  Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 185.125.190.52 443]
+W: Некоторые индексные файлы скачать не удалось. Они были проигнорированы, или вместо них были использованы старые версии.
+danil@danil-linux:~$ sudo apt install nginx -y
+Чтение списков пакетов… Готово
+Построение дерева зависимостей… Готово
+Чтение информации о состоянии… Готово
+Следующие НОВЫЕ пакеты будут установлены:
+  nginx
+Обновлено 0 пакетов, установлено 1 новых пакетов, для удаления отмечено 0 пакетов, и 22 пакетов не обновлено.
+Необходимо скачать 1 012 kB архивов.
+После данной операции объём занятого дискового пространства возрастёт на 3 283 kB.
+Пол:1 http://nginx.org/packages/ubuntu jammy/nginx amd64 nginx amd64 1.24.0-1~jammy [1 012 kB]
+Получено 1 012 kB за 5с (198 kB/s)
+Выбор ранее не выбранного пакета nginx.
+(Чтение базы данных … на данный момент установлено 189370 файлов и каталогов.)
+Подготовка к распаковке …/nginx_1.24.0-1~jammy_amd64.deb …
+----------------------------------------------------------------------
+
+Thanks for using nginx!
+
+Please find the official documentation for nginx here:
+* https://nginx.org/en/docs/
+
+Please subscribe to nginx-announce mailing list to get
+the most important news about nginx:
+* https://nginx.org/en/support.html
+
+Commercial subscriptions for nginx are available on:
+* https://nginx.com/products/
+
+----------------------------------------------------------------------
+Распаковывается nginx (1.24.0-1~jammy) …
+Настраивается пакет nginx (1.24.0-1~jammy) …
+Created symlink /etc/systemd/system/multi-user.target.wants/nginx.service → /lib/systemd/system/nginx.service.
+Обрабатываются триггеры для man-db (2.10.2-1) …
+danil@danil-linux:~$ apt show nginx
+Package: nginx
+Version: 1.24.0-1~jammy
+Priority: optional
+Section: httpd
+Maintainer: NGINX Packaging <nginx-packaging@f5.com>
+Installed-Size: 3 283 kB
+Provides: httpd, nginx, nginx-r1.24.0
+Depends: libc6 (>= 2.34), libcrypt1 (>= 1:4.1.0), libpcre2-8-0 (>= 10.22), libssl3 (>= 3.0.0~~alpha1), zlib1g (>= 1:1.1.4), lsb-base (>= 3.0-6), adduser
+Conflicts: nginx-common, nginx-core
+Replaces: nginx-common, nginx-core
+Homepage: https://nginx.org
+Download-Size: 1 012 kB
+APT-Manual-Installed: yes
+APT-Sources: http://nginx.org/packages/ubuntu jammy/nginx amd64 Packages
+Description: high performance web server
+ nginx [engine x] is an HTTP and reverse proxy server, as well as
+ a mail proxy server.
+
+N: Есть 6 дополнительных записей. Используйте «-a» для их просмотра.
+danil@danil-linux:~$ sudo nginx -t
+nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+nginx: configuration file /etc/nginx/nginx.conf test is successful
+danil@danil-linux:~$ sudo apt remove nginx -y
+Чтение списков пакетов… Готово
+Построение дерева зависимостей… Готово
+Чтение информации о состоянии… Готово
+Следующие пакеты будут УДАЛЕНЫ:
+  nginx
+Обновлено 0 пакетов, установлено 0 новых пакетов, для удаления отмечено 1 пакетов, и 22 пакетов не обновлено.
+После данной операции объём занятого дискового пространства уменьшится на 3 283 kB.
+(Чтение базы данных … на данный момент установлено 189404 файла и каталога.)
+Удаляется nginx (1.24.0-1~jammy) …
+Обрабатываются триггеры для man-db (2.10.2-1) …
+danil@danil-linux:~$ sudo dpkg -r nginx
+dpkg: предупреждение: игнорируется запрос на удаление неустановленного пакета nginx
+
+2 задание
+
+
+
+3 задание
