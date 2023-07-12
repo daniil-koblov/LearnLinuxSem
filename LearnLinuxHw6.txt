@@ -1,0 +1,91 @@
+1 Задание
+
+root@danil-linux:~# iptables -L -nv
+Chain INPUT (policy ACCEPT 607 packets, 37134 bytes)
+ pkts bytes target     prot opt in     out     source               destination
+
+Chain FORWARD (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination
+
+Chain OUTPUT (policy ACCEPT 658 packets, 64696 bytes)
+ pkts bytes target     prot opt in     out     source               destination
+root@danil-linux:~# iptables -A INPUT -p tcp --dport=22 -j ACCEPT
+root@danil-linux:~# iptables -L -nv
+Chain INPUT (policy ACCEPT 763 packets, 46869 bytes)
+ pkts bytes target     prot opt in     out     source               destination
+    7   404 ACCEPT     tcp  --  *      *       0.0.0.0/0            0.0.0.0/0            tcp dpt:22
+
+Chain FORWARD (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination
+
+Chain OUTPUT (policy ACCEPT 750 packets, 74891 bytes)
+ pkts bytes target     prot opt in     out     source               destination
+root@danil-linux:~# iptables -A INPUT -p tcp --dport=80 -j ACCEPT
+root@danil-linux:~# iptables -L -nv
+Chain INPUT (policy ACCEPT 769 packets, 47481 bytes)
+ pkts bytes target     prot opt in     out     source               destination
+   98  5932 ACCEPT     tcp  --  *      *       0.0.0.0/0            0.0.0.0/0            tcp dpt:22
+    0     0 ACCEPT     tcp  --  *      *       0.0.0.0/0            0.0.0.0/0            tcp dpt:80
+
+Chain FORWARD (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination
+
+Chain OUTPUT (policy ACCEPT 805 packets, 80253 bytes)
+ pkts bytes target     prot opt in     out     source               destination
+root@danil-linux:~# iptables -P INPUT DROP
+root@danil-linux:~# iptables -L -nv
+Chain INPUT (policy DROP 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination
+  252 14992 ACCEPT     tcp  --  *      *       0.0.0.0/0            0.0.0.0/0            tcp dpt:22
+    0     0 ACCEPT     tcp  --  *      *       0.0.0.0/0            0.0.0.0/0            tcp dpt:80
+
+Chain FORWARD (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination
+
+Chain OUTPUT (policy ACCEPT 890 packets, 88209 bytes)
+ pkts bytes target     prot opt in     out     source               destination
+
+2 Задание
+
+root@danil-linux:~# iptables -t nat -I PREROUTING -p tcp --dport 80 -j REDIRECT --to-port 8080
+root@danil-linux:~# iptables -L -nv -t nat
+Chain PREROUTING (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination
+    0     0 REDIRECT   tcp  --  *      *       0.0.0.0/0            0.0.0.0/0            tcp dpt:80 redir ports 8080
+
+Chain INPUT (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination
+
+Chain OUTPUT (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination
+
+Chain POSTROUTING (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination
+
+3 Задание
+
+root@danil-linux:~# iptables -A INPUT -p tcp -s 3.4.5.6 --dport 80 -j DROP
+root@danil-linux:~# iptables -L -nv
+Chain INPUT (policy DROP 114 packets, 17308 bytes)
+ pkts bytes target     prot opt in     out     source               destination
+  638 38644 ACCEPT     tcp  --  *      *       0.0.0.0/0            0.0.0.0/0            tcp dpt:22
+    0     0 ACCEPT     tcp  --  *      *       0.0.0.0/0            0.0.0.0/0            tcp dpt:80
+    0     0 DROP       tcp  --  *      *       3.4.5.6              0.0.0.0/0            tcp dpt:80
+
+Chain FORWARD (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination
+
+Chain OUTPUT (policy ACCEPT 1201 packets, 116K bytes)
+ pkts bytes target     prot opt in     out     source               destination
+
+4 Задание
+
+root@danil-linux:~# mc
+root@danil-linux:~# ps ax | grep mc
+   2174 ?        Sl     0:00 /usr/libexec/ibus-memconf
+   3917 pts/1    S+     0:00 mc
+   3928 pts/2    S+     0:00 grep --color=auto mc
+root@danil-linux:~# kill -9 3917Убито
+root@danil-linux:~# ps ax | grep mc
+   2174 ?        Sl     0:00 /usr/libexec/ibus-memconf
+   3932 pts/1    S+     0:00 grep --color=auto mc
