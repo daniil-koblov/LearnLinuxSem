@@ -1,0 +1,254 @@
+1 Задание
+
+2 Задание
+
+danil@danil-linux:~$ sudo apt install docker.io
+[sudo] пароль для danil:
+Чтение списков пакетов… Готово
+Построение дерева зависимостей… Готово
+Чтение информации о состоянии… Готово
+Будут установлены следующие дополнительные пакеты:
+  bridge-utils containerd git git-man liberror-perl pigz runc ubuntu-fan
+Предлагаемые пакеты:
+  ifupdown aufs-tools btrfs-progs cgroupfs-mount | cgroup-lite debootstrap docker-doc rinse zfs-fuse | zfsutils
+  git-daemon-run | git-daemon-sysvinit git-doc git-email git-gui gitk gitweb git-cvs git-mediawiki git-svn
+Следующие НОВЫЕ пакеты будут установлены:
+  bridge-utils containerd docker.io git git-man liberror-perl pigz runc ubuntu-fan
+Обновлено 0 пакетов, установлено 9 новых пакетов, для удаления отмечено 0 пакетов, и 0 пакетов не обновлено.
+Необходимо скачать 76,2 MB архивов.
+После данной операции объём занятого дискового пространства возрастёт на 307 MB.
+Хотите продолжить? [Д/н] y
+Пол:1 http://ru.archive.ubuntu.com/ubuntu jammy/universe amd64 pigz amd64 2.6-1 [63,6 kB]
+Пол:2 http://ru.archive.ubuntu.com/ubuntu jammy/main amd64 bridge-utils amd64 1.7-1ubuntu3 [34,4 kB]
+Пол:3 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 runc amd64 1.1.4-0ubuntu1~22.04.3 [4 244 kB]
+Пол:4 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 containerd amd64 1.6.12-0ubuntu1~22.04.3 [34,4 MB]
+Пол:5 http://ru.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 docker.io amd64 20.10.21-0ubuntu1~22.04.3 [33,3 MB]
+Пол:6 http://ru.archive.ubuntu.com/ubuntu jammy/main amd64 liberror-perl all 0.17029-1 [26,5 kB]
+Пол:7 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 git-man all 1:2.34.1-1ubuntu1.9 [954 kB]
+Пол:8 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 git amd64 1:2.34.1-1ubuntu1.9 [3 166 kB]
+Пол:9 http://ru.archive.ubuntu.com/ubuntu jammy/universe amd64 ubuntu-fan all 0.12.16 [35,2 kB]
+Получено 76,2 MB за 12с (6 243 kB/s)
+Предварительная настройка пакетов …
+Выбор ранее не выбранного пакета pigz.
+(Чтение базы данных … на данный момент установлено 196329 файлов и каталогов.)
+Подготовка к распаковке …/0-pigz_2.6-1_amd64.deb …
+Распаковывается pigz (2.6-1) …
+Выбор ранее не выбранного пакета bridge-utils.
+Подготовка к распаковке …/1-bridge-utils_1.7-1ubuntu3_amd64.deb …
+Распаковывается bridge-utils (1.7-1ubuntu3) …
+Выбор ранее не выбранного пакета runc.
+Подготовка к распаковке …/2-runc_1.1.4-0ubuntu1~22.04.3_amd64.deb …
+Распаковывается runc (1.1.4-0ubuntu1~22.04.3) …
+Выбор ранее не выбранного пакета containerd.
+Подготовка к распаковке …/3-containerd_1.6.12-0ubuntu1~22.04.3_amd64.deb …
+Распаковывается containerd (1.6.12-0ubuntu1~22.04.3) …
+Выбор ранее не выбранного пакета docker.io.
+Подготовка к распаковке …/4-docker.io_20.10.21-0ubuntu1~22.04.3_amd64.deb …
+Распаковывается docker.io (20.10.21-0ubuntu1~22.04.3) …
+Выбор ранее не выбранного пакета liberror-perl.
+Подготовка к распаковке …/5-liberror-perl_0.17029-1_all.deb …
+Распаковывается liberror-perl (0.17029-1) …
+Выбор ранее не выбранного пакета git-man.
+Подготовка к распаковке …/6-git-man_1%3a2.34.1-1ubuntu1.9_all.deb …
+Распаковывается git-man (1:2.34.1-1ubuntu1.9) …
+Выбор ранее не выбранного пакета git.
+Подготовка к распаковке …/7-git_1%3a2.34.1-1ubuntu1.9_amd64.deb …
+Распаковывается git (1:2.34.1-1ubuntu1.9) …
+Выбор ранее не выбранного пакета ubuntu-fan.
+Подготовка к распаковке …/8-ubuntu-fan_0.12.16_all.deb …
+Распаковывается ubuntu-fan (0.12.16) …
+Настраивается пакет runc (1.1.4-0ubuntu1~22.04.3) …
+Настраивается пакет liberror-perl (0.17029-1) …
+Настраивается пакет bridge-utils (1.7-1ubuntu3) …
+Настраивается пакет pigz (2.6-1) …
+Настраивается пакет git-man (1:2.34.1-1ubuntu1.9) …
+Настраивается пакет containerd (1.6.12-0ubuntu1~22.04.3) …
+Created symlink /etc/systemd/system/multi-user.target.wants/containerd.service → /lib/systemd/system/containerd.service.
+Настраивается пакет ubuntu-fan (0.12.16) …
+Created symlink /etc/systemd/system/multi-user.target.wants/ubuntu-fan.service → /lib/systemd/system/ubuntu-fan.service.
+Настраивается пакет docker.io (20.10.21-0ubuntu1~22.04.3) …
+Добавляется группа «docker» (GID 140) ...
+Готово.
+Created symlink /etc/systemd/system/multi-user.target.wants/docker.service → /lib/systemd/system/docker.service.
+Created symlink /etc/systemd/system/sockets.target.wants/docker.socket → /lib/systemd/system/docker.socket.
+Настраивается пакет git (1:2.34.1-1ubuntu1.9) …
+Обрабатываются триггеры для man-db (2.10.2-1) …
+
+danil@danil-linux:~$ sudo docker
+
+Usage:  docker [OPTIONS] COMMAND
+
+A self-sufficient runtime for containers
+
+Options:
+      --config string      Location of client config files (default "/root/.docker")
+  -c, --context string     Name of the context to use to connect to the daemon (overrides DOCKER_HOST env var and
+                           default context set with "docker context use")
+  -D, --debug              Enable debug mode
+  -H, --host list          Daemon socket(s) to connect to
+  -l, --log-level string   Set the logging level ("debug"|"info"|"warn"|"error"|"fatal") (default "info")
+      --tls                Use TLS; implied by --tlsverify
+      --tlscacert string   Trust certs signed only by this CA (default "/root/.docker/ca.pem")
+      --tlscert string     Path to TLS certificate file (default "/root/.docker/cert.pem")
+      --tlskey string      Path to TLS key file (default "/root/.docker/key.pem")
+      --tlsverify          Use TLS and verify the remote
+  -v, --version            Print version information and quit
+
+Management Commands:
+  builder     Manage builds
+  config      Manage Docker configs
+  container   Manage containers
+  context     Manage contexts
+  image       Manage images
+  manifest    Manage Docker image manifests and manifest lists
+  network     Manage networks
+  node        Manage Swarm nodes
+  plugin      Manage plugins
+  secret      Manage Docker secrets
+  service     Manage services
+  stack       Manage Docker stacks
+  swarm       Manage Swarm
+  system      Manage Docker
+  trust       Manage trust on Docker images
+  volume      Manage volumes
+
+Commands:
+  attach      Attach local standard input, output, and error streams to a running container
+  build       Build an image from a Dockerfile
+  commit      Create a new image from a container's changes
+  cp          Copy files/folders between a container and the local filesystem
+  create      Create a new container
+  diff        Inspect changes to files or directories on a container's filesystem
+  events      Get real time events from the server
+  exec        Run a command in a running container
+  export      Export a container's filesystem as a tar archive
+  history     Show the history of an image
+  images      List images
+  import      Import the contents from a tarball to create a filesystem image
+  info        Display system-wide information
+  inspect     Return low-level information on Docker objects
+  kill        Kill one or more running containers
+  load        Load an image from a tar archive or STDIN
+  login       Log in to a Docker registry
+  logout      Log out from a Docker registry
+  logs        Fetch the logs of a container
+  pause       Pause all processes within one or more containers
+  port        List port mappings or a specific mapping for the container
+  ps          List containers
+  pull        Pull an image or a repository from a registry
+  push        Push an image or a repository to a registry
+  rename      Rename a container
+  restart     Restart one or more containers
+  rm          Remove one or more containers
+  rmi         Remove one or more images
+  run         Run a command in a new container
+  save        Save one or more images to a tar archive (streamed to STDOUT by default)
+  search      Search the Docker Hub for images
+  start       Start one or more stopped containers
+  stats       Display a live stream of container(s) resource usage statistics
+  stop        Stop one or more running containers
+  tag         Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE
+  top         Display the running processes of a container
+  unpause     Unpause all processes within one or more containers
+  update      Update configuration of one or more containers
+  version     Show the Docker version information
+  wait        Block until one or more containers stop, then print their exit codes
+
+Run 'docker COMMAND --help' for more information on a command.
+
+To get more help with docker, check out our guides at https://docs.docker.com/go/guides/
+
+root@danil-linux:/home/danil# docker run hello-world
+Unable to find image 'hello-world:latest' locally
+latest: Pulling from library/hello-world
+719385e32844: Pull complete
+Digest: sha256:926fac19d22aa2d60f1a276b66a20eb765fbeea2db5dbdaafeb456ad8ce81598
+Status: Downloaded newer image for hello-world:latest
+
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+    (amd64)
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+
+Share images, automate workflows, and more with a free Docker ID:
+ https://hub.docker.com/
+
+For more examples and ideas, visit:
+ https://docs.docker.com/get-started/
+
+3 Задание
+
+root@danil-linux:/home/danil# docker search ubuntu
+NAME                             DESCRIPTION                                     STARS     OFFICIAL   AUTOMATED
+ubuntu                           Ubuntu is a Debian-based Linux operating sys…   16178     [OK]
+websphere-liberty                WebSphere Liberty multi-architecture images …   296       [OK]
+ubuntu-upstart                   DEPRECATED, as is Upstart (find other proces…   114       [OK]
+neurodebian                      NeuroDebian provides neuroscience research s…   102       [OK]
+ubuntu/nginx                     Nginx, a high-performance reverse proxy & we…   96
+open-liberty                     Open Liberty multi-architecture images based…   61        [OK]
+ubuntu/squid                     Squid is a caching proxy for the Web. Long-t…   61
+ubuntu/apache2                   Apache, a secure & extensible open-source HT…   59
+ubuntu/bind9                     BIND 9 is a very flexible, full-featured DNS…   56
+ubuntu-debootstrap               DEPRECATED; use "ubuntu" instead                52        [OK]
+ubuntu/mysql                     MySQL open source fast, stable, multi-thread…   51
+ubuntu/prometheus                Prometheus is a systems and service monitori…   44
+ubuntu/kafka                     Apache Kafka, a distributed event streaming …   32
+ubuntu/postgres                  PostgreSQL is an open source object-relation…   31
+ubuntu/redis                     Redis, an open source key-value store. Long-…   18
+ubuntu/dotnet-aspnet             Chiselled Ubuntu runtime image for ASP.NET a…   10
+ubuntu/zookeeper                 ZooKeeper maintains configuration informatio…   9
+ubuntu/grafana                   Grafana, a feature rich metrics dashboard & …   9
+ubuntu/dotnet-deps               Chiselled Ubuntu for self-contained .NET & A…   9
+ubuntu/prometheus-alertmanager   Alertmanager handles client alerts from Prom…   9
+ubuntu/dotnet-runtime            Chiselled Ubuntu runtime image for .NET apps…   7
+ubuntu/memcached                 Memcached, in-memory keyvalue store for smal…   5
+ubuntu/telegraf                  Telegraf collects, processes, aggregates & w…   4
+ubuntu/cortex                    Cortex provides storage for Prometheus. Long…   3
+ubuntu/cassandra                 Cassandra, an open source NoSQL distributed …   2
+
+root@danil-linux:/home/danil# docker pull ubuntu
+Using default tag: latest
+latest: Pulling from library/ubuntu
+3153aa388d02: Pull complete
+Digest: sha256:0bced47fffa3361afa981854fcabcd4577cd43cebbb808cea2b1f33a3dd7f508
+Status: Downloaded newer image for ubuntu:latest
+docker.io/library/ubuntu:latest
+
+root@danil-linux:/home/danil# docker images
+REPOSITORY    TAG       IMAGE ID       CREATED        SIZE
+docker        latest    eb2c0505d11b   12 days ago    340MB
+nginx         latest    021283c8eb95   2 weeks ago    187MB
+ubuntu        latest    5a81c4b8502e   3 weeks ago    77.8MB
+hello-world   latest    9c7a54a9a43c   2 months ago   13.3kB
+
+4 Задание
+
+root@danil-linux:/home/danil# nano Dockerfile
+FROM ubuntu:20.04
+MAINTAINER GB_student
+RUN apt-get update
+RUN apt-get install nginx -y
+RUN apt-get install php-fpm -y
+RUN mkdir /run/php-fpm
+VOLUME "/var/www/html"
+EXPOSE 80
+CMD /usr/sbin/nginx -g "daemon off;" ; php-fpm -D
+root@danil-linux:/home/danil# docker build -t php_fpm .
+Sending build context to Docker daemon  512.2MB
+Error response from daemon: dockerfile parse error line 1: unknown instruction: CAT
+root@danil-linux:/home/danil# docker images
+REPOSITORY    TAG       IMAGE ID       CREATED        SIZE
+docker        latest    eb2c0505d11b   12 days ago    340MB
+nginx         latest    021283c8eb95   2 weeks ago    187MB
+ubuntu        latest    5a81c4b8502e   3 weeks ago    77.8MB
+hello-world   latest    9c7a54a9a43c   2 months ago   13.3kB  
